@@ -1,7 +1,7 @@
 // import dynamic from 'next/dynamic'
 import React from 'react'
 
-import Logo from '@/assets/icons/Aikatan-logo.webp'
+import Logo from '@/assets/icons/Aikatan-logo.png'
 import NeonEffect from '@/assets/icons/neon-effect.png'
 
 // const CountDownTimerDynamic = dynamic(
