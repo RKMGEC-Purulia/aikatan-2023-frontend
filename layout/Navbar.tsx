@@ -71,7 +71,7 @@ const Navbar = () => {
                 <Link
                   href={'/'}
                   className="flex-shrink-0 text-xl sm:text-2xl 2xl:text-3xl font-extrabold focus:outline-none focus:ring px-3 rounded-sm">
-                  <span className={'font-bengali-noto-sans'}>ঐক</span>tan 2k24
+                  <span className={'font-bengali-noto-sans'}>ঐক</span>tan2k24
                 </Link>
                 <div className="hidden md:block">
                   <div className="ml-10 flex items-center space-x-4">
