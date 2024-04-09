@@ -8,8 +8,8 @@ import {
 import SpotLightItem from '@/features/Home/components/SpotLightItem'
 
 const social: Social[] = [
-  { id: 'facebook', link: 'https://www.facebook.com/aikatan2.0' },
-  { id: 'instagram', link: 'https://www.instagram.com/aikatan2.0/' },
+  { id: 'facebook', link: 'https://www.facebook.com/aikatan.rkmgec' },
+  { id: 'instagram', link: 'https://www.instagram.com/aikatan.rkmgec' },
   { id: 'youtube', link: 'https://www.youtube.com/@RKMGECOFFICIAL' }
 ]
 
@@ -22,7 +22,7 @@ const Footer = () => {
             <a
               href={'#home'}
               className="text-xl sm:text-2xl 2xl:text-3xl font-extrabold">
-              <span className={'font-bengali-noto-sans'}>ঐক</span>tan2.0
+              <span className={'font-bengali-noto-sans'}>ঐক</span>tan 2k24
             </a>
             <p className={'max-w-xs'}>
               Experience the thrill of innovation, the ultimate tech fest! Join
@@ -60,7 +60,7 @@ const Footer = () => {
         </div>
       </div>
       <p className="text-center border-t-2 mt-5 py-5 border-gray-600 px-3">
-        ©2023 Aikatan2.0 - Web & Designer Team. All rights reserved.
+        ©2023-24 Aikatan RKMGEC - Web & Designer Team. All rights reserved.
       </p>
     </SpotLightItem>
   )
