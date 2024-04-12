@@ -4,6 +4,13 @@ import React from 'react'
 import Logo from '@/assets/icons/Aikatan-logo.png'
 import NeonEffect from '@/assets/icons/neon-effect.png'
 
+// const CountDownTimerDynamic = dynamic(
+//   () => import('../components/CountDownTimer'),
+//   {
+//     ssr: false
+//   }
+// )
+
 const IntroSection = () => {
   return (
     <div className="z-10 w-full flex items-center flex-col gap-3">

@@ -109,7 +109,7 @@ const CulturalEvent = () => {
           Book your Pass{' '}
           <span className="text-green-500 font-semibold">@899/-</span> Only
         </p>
-        <Link href="">
+        <Link href={'/checkout'}>
           <button
             className={
               'bg-blue-700 px-4 rounded-sm py-1 text-lg hover:bg-blue-900'
