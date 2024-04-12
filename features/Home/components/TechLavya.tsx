@@ -1,11 +1,11 @@
 import React from 'react'
 
-import Codethon from '@/assets/events/codethon.png'
-import Design from '@/assets/events/design.png'
-import Exibition from '@/assets/events/exhibition.png'
-import Hackthon from '@/assets/events/hackthon.png'
-import Quiz from '@/assets/events/quiz.png'
-import RoboRush from '@/assets/events/roborush.png'
+import Codethon from '@/assets/events/codethon.webp'
+import Design from '@/assets/events/design.webp'
+import Exibition from '@/assets/events/exhibition.webp'
+import Hackthon from '@/assets/events/hackthon.webp'
+import Quiz from '@/assets/events/quiz.webp'
+import RoboRush from '@/assets/events/roborush.webp'
 
 import { EventCardV2 } from './EventCard'
 import EventCardWrapper from './EventCardWrapper'
@@ -14,7 +14,7 @@ export const YetToBeAnnounced = 'Yet to be announced!!'
 
 export const TechLavyaEvents = [
   {
-    id: '8',
+    id: 1,
     limitWord: 'default',
     name: 'BRAIN-BUSTER school',
     topic: 'Technical Quiz',
@@ -45,7 +45,7 @@ export const TechLavyaEvents = [
     entry_fee: ''
   },
   {
-    id: '4',
+    id: 2,
     limitWord: 'default',
     name: 'Gravity Algogem',
     topic: 'Codethon',
@@ -74,7 +74,7 @@ export const TechLavyaEvents = [
     entry_fee: ''
   },
   {
-    id: '1',
+    id: 3,
     limitWord: 'default',
     name: 'ACADEXPO - College',
     topic: 'project exhibition',
@@ -105,7 +105,7 @@ export const TechLavyaEvents = [
     entry_fee: '1200Rs/Team'
   },
   {
-    id: '7',
+    id: 4,
     limitWord: 'default',
     name: 'ACADEXPO - School ',
     topic: 'project exhibition',
@@ -136,7 +136,7 @@ export const TechLavyaEvents = [
     location: 'Front of CE/ECE Building'
   },
   {
-    id: '6',
+    id: 5,
     limitWord: 'default',
     name: 'Graphic Designing',
     topic: 'Graphic Designing',
@@ -167,7 +167,7 @@ export const TechLavyaEvents = [
     entry_fee: ''
   },
   {
-    id: '3',
+    id: 6,
     limitWord: 16,
     name: 'HACK-VENGERS',
     topic: 'Hackathon',
@@ -198,7 +198,7 @@ export const TechLavyaEvents = [
     entry_fee: ''
   },
   {
-    id: '5',
+    id: 7,
     limitWord: 'default',
     name: 'Robo-Rush',
     imgSrc: RoboRush.src,
@@ -229,7 +229,7 @@ export const TechLavyaEvents = [
     entry_fee: '1200Rs/Team'
   },
   {
-    id: '2',
+    id: 8,
     limitWord: 'default',
     name: 'BRAIN-BUSTER college',
     topic: 'Technical Quiz',
@@ -291,6 +291,7 @@ const TechLavya = () => {
           }) => (
             <EventCardV2
               key={id}
+              duration={id}
               description={description}
               imgSrc={imgSrc}
               heading={name}

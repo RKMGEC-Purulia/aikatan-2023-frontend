@@ -1,8 +1,11 @@
 import React from 'react'
-
 import { EventData } from '@/data'
-import EventCardWrapper from '@/features/Home/components/EventCardWrapper'
-import SpotLightItem from '@/features/Home/components/SpotLightItem'
+import {
+  VerticalTimeline,
+  VerticalTimelineElement
+} from 'react-vertical-timeline-component'
+import 'react-vertical-timeline-component/style.min.css'
+import { MdDateRange } from 'react-icons/md'
 
 const EventSchedule = () => {
   return (
@@ -12,11 +15,11 @@ const EventSchedule = () => {
           <span className="text-green-500 font-semibold">EVENT </span>SCHEDULE
         </h2>
       </a>
-      <EventCardWrapper>
+      <VerticalTimeline className=" text-black" lineColor="gray">
         {EventData.map(({ date, shedules }) => (
           <EventScheduleCard key={date} shedules={shedules} date={date} />
         ))}
-      </EventCardWrapper>
+      </VerticalTimeline>
     </section>
   )
 }
@@ -40,17 +43,18 @@ const EventScheduleCard = ({ date, shedules }: EventCardProps) => {
   const day = dateToString[0]
   const dayOfMonth = dateToString[2]
   return (
-    <div className="flex flex-col gap-2 w-full sm:w-72 2xl:w-80">
-      <div className="relative uppercase text-2xl 2xl:text-3xl">
-        <p className="top-0 text-yellow-200 font-semibold">{month}</p>
-        <p className="text-blue-500 font-black text-7xl 2xl:text-8xl font-sigmar-one">
-          {dayOfMonth}
-        </p>
-        <p className="absolute text-slate-200 z-10 bottom-0 left-0 font-bold">
-          {day}
-        </p>
-      </div>
-      <SpotLightItem className={'bg-gray-800 p-4 rounded-lg shadow-xl'}>
+    <VerticalTimelineElement
+      className="vertical-timeline-element--work"
+      contentStyle={{
+        background: 'rgb(31 41 55)',
+        color: '#fff',
+        border: 'none'
+      }}
+      contentArrowStyle={{ borderRight: '7px solid rgb(31 41 60)' }}
+      date={`${dayOfMonth}th ${month} `}
+      iconStyle={{ background: 'rgb(31 41 55)', color: '#fff' }}
+      icon={<MdDateRange size={20} />}>
+      <div>
         {shedules.map(({ name, from, to }, idx) => {
           return (
             <div key={idx} className="flex flex-row gap-3 items-start">
@@ -64,7 +68,7 @@ const EventScheduleCard = ({ date, shedules }: EventCardProps) => {
             </div>
           )
         })}
-      </SpotLightItem>
-    </div>
+      </div>
+    </VerticalTimelineElement>
   )
 }

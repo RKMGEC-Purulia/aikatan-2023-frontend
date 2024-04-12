@@ -1,14 +1,14 @@
 import { motion } from 'framer-motion'
 import React from 'react'
 
-import Image2 from '@/assets/Aikatan19/2.jpg'
-import Image3 from '@/assets/Aikatan19/3.jpg'
-import Image4 from '@/assets/Aikatan19/4.jpg'
-import Image6 from '@/assets/Aikatan19/6.jpg'
-import Image8 from '@/assets/Aikatan19/8.jpg'
-import Image9 from '@/assets/Aikatan19/9.jpg'
-import Image10 from '@/assets/Aikatan19/10.jpg'
-import Image11 from '@/assets/Aikatan19/11.jpg'
+import Image2 from '@/assets/Aikatan19/2.webp'
+import Image3 from '@/assets/Aikatan19/3.webp'
+import Image4 from '@/assets/Aikatan19/4.webp'
+import Image6 from '@/assets/Aikatan19/6.webp'
+import Image8 from '@/assets/Aikatan19/8.webp'
+import Image9 from '@/assets/Aikatan19/9.webp'
+import Image10 from '@/assets/Aikatan19/10.webp'
+import Image11 from '@/assets/Aikatan19/11.webp'
 import SpotLightItem from '@/features/Home/components/SpotLightItem'
 
 const GallaryData = [

@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
+import { motion } from 'framer-motion'
 
 import SpotLightItem from './SpotLightItem'
 
 type EventCardProps = {
+  duration: number
   description: string
   imgSrc: string
   heading: string
@@ -46,7 +48,14 @@ export const EventCard = ({
   }
 
   return (
-    <div
+    <motion.div
+      initial={{ y: 50, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{
+        duration: 1,
+        // delay: duration / 10 + 0.2,
+        type: 'spring'
+      }}
       className={'w-full sm:w-72 2xl:w-80 rounded shadow-xl overflow-hidden'}>
       <div
         className={`bg-center bg-cover w-full h-32 overflow-auto bg-[url(${imgSrc})]`}></div>
@@ -118,12 +127,12 @@ export const EventCard = ({
           </div>
           <div className={'flex flex-row gap-3'}>
             {registrationLink && (
-              <a href={registrationLink}>
+              <a>
                 <button
                   className={
                     'bg-blue-700 rounded-sm px-3 2xl:px-4 py-0.5 2xl:py-1 2xl:text-lg hover:bg-blue-900'
                   }>
-                  Register
+                  Coming Soon...
                 </button>
               </a>
             )}
@@ -140,13 +149,14 @@ export const EventCard = ({
           </div>
         </div>
       </SpotLightItem>
-    </div>
+    </motion.div>
   )
 }
 
 export default EventCard
 
 export const EventCardV2 = ({
+  duration,
   description,
   heading,
   imgSrc,
@@ -159,120 +169,130 @@ export const EventCardV2 = ({
   entry_fee
 }: EventCardProps) => {
   return (
-    <SpotLightItem
-      className={
-        'card-container h-[23rem] w-80 rounded shadow-xl overflow-hidden'
-      }>
-      <div className="card-flip text-content-medium">
-        <div className="card-front flex flex-col">
-          <div
-            className={`bg-center bg-cover w-full h-32 overflow-auto bg-[url(${imgSrc})]`}></div>
-          <div className="flex-1 flex flex-col p-3 gap-2 justify-between">
-            <div className="flex flex-col gap-2">
-              <h3 className={'text-2xl font-semibold'}>{heading}</h3>
-
-              <div className="text-content-medium flex flex-col gap-2">
-                <p>{description}</p>
+    <motion.div
+      initial={{ y: 50, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{
+        duration: 1,
+        delay: duration / 10 + 0.2,
+        type: 'spring'
+      }}>
+      <SpotLightItem
+        className={
+          'card-container h-[28rem] w-[24rem] p-4 rounded-xl shadow-xl overflow-hidden black-gradient'
+        }>
+        <div className="card-flip text-content-medium">
+          <div className=" h-full card-front flex flex-col justify-between">
+            <div
+              className={`bg-center bg-cover w-full h-52 overflow-auto rounded-lg bg-[url(${imgSrc})]`}></div>
+            <div className="flex-1 flex flex-col p-3 gap-2 h-full justify-between">
+              <div className="flex flex-col gap-2">
+                <h3 className={'text-2xl font-semibold'}>{heading}</h3>
+                <div className="text-content-medium flex flex-col gap-2">
+                  <p>{description}</p>
+                </div>
               </div>
             </div>
-            <p className={'font-sm text-center text-gray-500'}>
+            <p className={'font-sm text-center  text-gray-500'}>
               Tap in Register
             </p>
           </div>
-        </div>
-        <div className="card-back p-3 flex flex-col justify-evenly">
-          <div className={'flex flex-col'}>
-            {entry_fee && (
-              <>
-                <p>
-                  <b>Entry Fee:</b> {entry_fee}
-                </p>
-              </>
-            )}
-            {prizes &&
-              (prizes.winner || prizes.runner_up || prizes.runner_up_2nd) && (
+          <div className="card-back p-3 flex flex-col justify-evenly">
+            <div className={'flex flex-col'}>
+              {entry_fee && (
                 <>
                   <p>
-                    <b>Prizes:</b>
+                    <b>Entry Fee:</b> {entry_fee}
                   </p>
-                  {prizes.winner && <p>Winner - {prizes.winner}</p>}
-                  {prizes.runner_up_2nd ? (
-                    <>
-                      {prizes.runner_up && (
-                        <p>1st RunnerUp - {prizes.runner_up}</p>
-                      )}
-                      {prizes.runner_up_2nd && (
-                        <p>2nd RunnerUp - {prizes.runner_up_2nd}</p>
-                      )}
-                    </>
-                  ) : (
-                    <>
-                      {prizes.runner_up && <p>RunnerUp - {prizes.runner_up}</p>}
-                    </>
-                  )}
                 </>
               )}
-            {time && (
-              <>
-                <p>
-                  <b>Time: </b>
-                </p>
-                <p className={''}> {time}</p>
-              </>
-            )}
+              {prizes &&
+                (prizes.winner || prizes.runner_up || prizes.runner_up_2nd) && (
+                  <>
+                    <p>
+                      <b>Prizes:</b>
+                    </p>
+                    {prizes.winner && <p>Winner - {prizes.winner}</p>}
+                    {prizes.runner_up_2nd ? (
+                      <>
+                        {prizes.runner_up && (
+                          <p>1st RunnerUp - {prizes.runner_up}</p>
+                        )}
+                        {prizes.runner_up_2nd && (
+                          <p>2nd RunnerUp - {prizes.runner_up_2nd}</p>
+                        )}
+                      </>
+                    ) : (
+                      <>
+                        {prizes.runner_up && (
+                          <p>RunnerUp - {prizes.runner_up}</p>
+                        )}
+                      </>
+                    )}
+                  </>
+                )}
+              {time && (
+                <>
+                  <p>
+                    <b>Time: </b>
+                  </p>
+                  <p className={''}> {time}</p>
+                </>
+              )}
 
-            {location && (
-              <>
-                <p>
-                  <b>Location: </b>
-                </p>
-                <p> {location}</p>
-              </>
-            )}
+              {location && (
+                <>
+                  <p>
+                    <b>Location: </b>
+                  </p>
+                  <p> {location}</p>
+                </>
+              )}
 
-            {contacts.length > 0 && (
-              <>
-                <p>
-                  <b>Contact:</b>
-                </p>
-                <p>
-                  {contacts
-                    .map(({ number, name }) => {
-                      if (name) {
-                        return `${number} (${name})`
-                      } else {
-                        return number
-                      }
-                    })
-                    .join(', ')}
-                </p>
-              </>
-            )}
-          </div>
-          <div className={'flex flex-row gap-2'}>
-            {registrationLink && (
-              <a href={registrationLink}>
-                <button
-                  className={
-                    'h-full bg-blue-700 rounded-sm px-3 2xl:px-4 py-0.5 2xl:py-1 2xl:text-lg hover:bg-blue-900'
-                  }>
-                  Register
-                </button>
-              </a>
-            )}
-            {rulesLink && (
-              <a href={rulesLink} target={'_blank'} rel="noreferrer">
-                <button
-                  className={
-                    'border border-blue-700 text-blue-700 bg-sky-100 rounded-sm px-3 2xl:px-4 py-0.5 2xl:py-1 2xl:text-lg hover:bg-blue-200 hover:text-blue-700'
-                  }>
-                  Rules
-                </button>
-              </a>
-            )}
+              {contacts.length > 0 && (
+                <>
+                  <p>
+                    <b>Contact:</b>
+                  </p>
+                  <p>
+                    {contacts
+                      .map(({ number, name }) => {
+                        if (name) {
+                          return `${number} (${name})`
+                        } else {
+                          return number
+                        }
+                      })
+                      .join(', ')}
+                  </p>
+                </>
+              )}
+            </div>
+            <div className={'flex flex-row gap-2'}>
+              {registrationLink && (
+                <a>
+                  <button
+                    className={
+                      'h-full bg-blue-700 rounded-sm px-3 2xl:px-4 py-0.5 2xl:py-1 2xl:text-lg hover:bg-blue-900'
+                    }>
+                    Coming Soon...
+                  </button>
+                </a>
+              )}
+              {rulesLink && (
+                <a href={rulesLink} target={'_blank'} rel="noreferrer">
+                  <button
+                    className={
+                      'border border-blue-700 text-blue-700 bg-sky-100 rounded-sm px-3 2xl:px-4 py-0.5 2xl:py-1 2xl:text-lg hover:bg-blue-200 hover:text-blue-700'
+                    }>
+                    Rules
+                  </button>
+                </a>
+              )}
+            </div>
           </div>
         </div>
-      </div>
-    </SpotLightItem>
+      </SpotLightItem>
+    </motion.div>
   )
 }

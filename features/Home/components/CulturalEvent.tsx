@@ -1,15 +1,17 @@
 import React from 'react'
 
-import RockingTwilight from '@/assets/events/1.jpg'
-// import Reunion from '@/assets/events/3.jpg'
-import Snigdhajit from '@/assets/events/4.jpg'
-import TrapMusic from '@/assets/events/5.jpg'
-import DJkoyel from '@/assets/events/6.jpg'
-import TheOctaves from '@/assets/events/7.jpg'
-import ChoNach from '@/assets/events/8.jpg'
+import RockingTwilight from '@/assets/events/1.webp'
+// import Reunion from '@/assets/events/3.webp'
+import Snigdhajit from '@/assets/events/4.webp'
+import TrapMusic from '@/assets/events/5.webp'
+import DJkoyel from '@/assets/events/6.webp'
+import TheOctaves from '@/assets/events/7.webp'
+import ChoNach from '@/assets/events/8.webp'
 
 import EventCardWrapper from './EventCardWrapper'
 import SpotLightItem from './SpotLightItem'
+import Link from 'next/link'
+import { motion } from 'framer-motion'
 
 const CulturalEventData = [
   // {
@@ -21,7 +23,7 @@ const CulturalEventData = [
   //   location: ''
   // },
   {
-    id: 7,
+    id: 1,
     description:
       'Get ready to experience the Vibrant & Rhythmic Chhou Nach, the Heritage of Purulia, with the award-winning team of Bubhan Chandra Kumar!',
     title: 'Chhau Nach',
@@ -30,7 +32,7 @@ const CulturalEventData = [
     location: 'College Playground'
   },
   {
-    id: 6,
+    id: 2,
     description: `️Harmony in Motion Team Octaves Live in Action!.Grooving to the Bengali Beats. The Octaves is going to Rocking the Stage`,
     title: 'The Octaves',
     imgSrc: TheOctaves.src,
@@ -38,7 +40,7 @@ const CulturalEventData = [
     location: 'College Playground'
   },
   {
-    id: 2,
+    id: 3,
     description:
       'Join us for a night of non-stop music, dance and entertainment that will leave you wanting more. Featuring a lineup of talented artists and performers.',
     title: 'Rocking Twilight',
@@ -47,7 +49,7 @@ const CulturalEventData = [
     location: 'College Playground'
   },
   {
-    id: 3,
+    id: 4,
     description:
       'Feel the Music Surge with Snigdhajit & Lifeline!! Get ready for a mind-blowing band performance at 2nd day of Our Aikatan2.0 that will make your heart race, your feet tap, and your soul soar to the rhythm of the music!',
     title: 'Snigdhajit & Lifeline',
@@ -56,7 +58,7 @@ const CulturalEventData = [
     location: 'College Playground'
   },
   {
-    id: 4,
+    id: 5,
     description: `Get ready to be TRAPPED in a web of radical rock! Let TRAP's - The Radical Array Project dynamic sound and vibes take you on a journey like never before.`,
     title: 'Trap Music',
     imgSrc: TrapMusic.src,
@@ -64,7 +66,7 @@ const CulturalEventData = [
     location: 'College Playground'
   },
   {
-    id: 5,
+    id: 6,
     description: `️Dance, mix, beat - Repeat! with DJ Koyel !! Get ready to move to the hottest tracks & create memories that will last a lifetime. Don't miss out on the ultimate dance extravaganza on Grand Night of Aikatan2.0`,
     title: 'DJ koyel',
     imgSrc: DJkoyel.src,
@@ -91,6 +93,7 @@ const CulturalEvent = () => {
         {CulturalEventData.map(
           ({ description, id, imgSrc, location, time, title }) => (
             <CulturalEventCard
+              duration={id}
               key={id}
               time={time}
               description={description}
@@ -106,17 +109,14 @@ const CulturalEvent = () => {
           Book your Pass{' '}
           <span className="text-green-500 font-semibold">@899/-</span> Only
         </p>
-        <a
-          href={
-            'https://docs.google.com/forms/d/e/1FAIpQLScwB6FMJgCbiLqHWogkUMeQdbFHLM8Hd4exIsmp-INE_quDaQ/viewform'
-          }>
+        <Link href={'/checkout'}>
           <button
             className={
               'bg-blue-700 px-4 rounded-sm py-1 text-lg hover:bg-blue-900'
             }>
             Book Now
           </button>
-        </a>
+        </Link>
       </div>
     </section>
   )
@@ -125,6 +125,7 @@ const CulturalEvent = () => {
 export default CulturalEvent
 
 type CulturalEventCardProps = {
+  duration: number
   imgSrc: string
   description: string
   title: string
@@ -132,6 +133,7 @@ type CulturalEventCardProps = {
   location: string
 }
 const CulturalEventCard = ({
+  duration,
   description,
   imgSrc,
   location,
@@ -139,10 +141,18 @@ const CulturalEventCard = ({
   title
 }: CulturalEventCardProps) => {
   return (
-    <div className={'h-max w-80 rounded shadow-xl overflow-hidden'}>
-      <div
-        className={`bg-center bg-cover w-full h-32 overflow-auto bg-[url(${imgSrc})]`}></div>
-      <SpotLightItem>
+    <motion.div
+      initial={{ y: 50, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{
+        duration: 1,
+        delay: duration / 10 + 0.2,
+        type: 'spring'
+      }}
+      className="min-h-[32rem] w-[24rem] rounded-xl shadow-xl overflow-hidden">
+      <SpotLightItem className={' h-full w-full p-4 black-gradient'}>
+        <div
+          className={`bg-center bg-cover w-full h-52 rounded-lg overflow-auto bg-[url(${imgSrc})]`}></div>
         <div className="px-4 py-5 flex flex-col gap-4">
           <div className="flex flex-col gap-2">
             <h3 className={'text-xl 2xl:text-2xl font-semibold'}>{title}</h3>
@@ -170,6 +180,6 @@ const CulturalEventCard = ({
           </div>
         </div>
       </SpotLightItem>
-    </div>
+    </motion.div>
   )
 }

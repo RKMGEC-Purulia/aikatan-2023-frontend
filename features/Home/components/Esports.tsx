@@ -1,11 +1,11 @@
 import React from 'react'
 
-import Asphalt from '@/assets/events/asphalt.png'
-import BGMI from '@/assets/events/bgmi.png'
-import ClashRoyale from '@/assets/events/ClashRoyale.png'
-import FIFA from '@/assets/events/Fifa.png'
-import FreeFire from '@/assets/events/freefire.png'
-import Valorant from '@/assets/events/valorant.png'
+import Asphalt from '@/assets/events/asphalt.webp'
+import BGMI from '@/assets/events/bgmi.webp'
+import ClashRoyale from '@/assets/events/ClashRoyale.webp'
+import FIFA from '@/assets/events/Fifa.webp'
+import FreeFire from '@/assets/events/freefire.webp'
+import Valorant from '@/assets/events/valorant.webp'
 import { YetToBeAnnounced } from '@/features/Home/components/TechLavya'
 
 import { EventCardV2 } from './EventCard'
@@ -13,7 +13,7 @@ import EventCardWrapper from './EventCardWrapper'
 
 export const EsportsEventData = [
   {
-    id: '2',
+    id: 1,
     rules: '',
     imgSrc: FreeFire.src,
     name: 'FREE FIRE MAX',
@@ -30,7 +30,7 @@ export const EsportsEventData = [
     limitWord: 'default'
   },
   {
-    id: '3',
+    id: 2,
     imgSrc: BGMI.src,
     name: 'BGMI',
     rules: '',
@@ -46,7 +46,7 @@ export const EsportsEventData = [
     limitWord: 'default'
   },
   {
-    id: '1',
+    id: 3,
     imgSrc: FIFA.src,
     name: 'FIFA-18',
     description: `Join the FIFA-18 e sports competition in college and compete against the best players. With exciting prizes up for grabs. Don't miss out on this incredible opportunity!`,
@@ -63,7 +63,7 @@ export const EsportsEventData = [
     limitWord: 'default'
   },
   {
-    id: '4',
+    id: 4,
     rules: '',
     imgSrc: Asphalt.src,
     name: 'Asphalt-8',
@@ -81,7 +81,7 @@ export const EsportsEventData = [
     limitWord: 'default'
   },
   {
-    id: '5',
+    id: 5,
     rules: '',
     imgSrc: Valorant.src,
     name: 'Valorant',
@@ -99,7 +99,7 @@ export const EsportsEventData = [
     limitWord: 'default'
   },
   {
-    id: '6',
+    id: 6,
     rules: '',
     imgSrc: ClashRoyale.src,
     name: 'Clash Royale',
@@ -144,6 +144,7 @@ const Esports = () => {
             limitWord
           }) => (
             <EventCardV2
+              duration={id}
               location={location}
               key={id}
               imgSrc={imgSrc}

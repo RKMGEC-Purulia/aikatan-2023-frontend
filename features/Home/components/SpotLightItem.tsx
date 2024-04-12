@@ -13,11 +13,7 @@ export const SpotLightItem = ({
 }) => {
   const mousePosition = useMousePosition()
   return (
-    <div
-      className={tx(
-        'h-max relative border border-zinc-800 backdrop-blur bg-gray-800',
-        className
-      )}>
+    <div className={tx('relative  backdrop-blur bg-gray-800', className)}>
       <AnimatePresence>
         <motion.div
           initial={{ opacity: 0 }}
