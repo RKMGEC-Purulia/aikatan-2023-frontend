@@ -1,12 +1,12 @@
 import React from 'react'
 
-import Bivas from '@/assets/members/bivas.png'
-import Gobinda from '@/assets/members/govindo.jpg'
-import Pallab from '@/assets/members/pallab.png'
-import Puspal from '@/assets/members/puspal.jpg'
-import Sagar from '@/assets/members/sagar.png'
-import Sankhadeep from '@/assets/members/sankhadeep.png'
-import Snigdha from '@/assets/members/snigdha.png'
+import Bivas from '@/assets/members/bivas.webp'
+import Gobinda from '@/assets/members/govindo.webp'
+import Pallab from '@/assets/members/pallab.webp'
+import Puspal from '@/assets/members/puspal.webp'
+import Sagar from '@/assets/members/sagar.webp'
+import Sankhadeep from '@/assets/members/sankhadeep.webp'
+import Snigdha from '@/assets/members/snigdha.webp'
 import { UserProfileCard } from '@/components'
 
 export const MembersData = {

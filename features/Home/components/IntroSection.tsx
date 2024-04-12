@@ -4,13 +4,6 @@ import React from 'react'
 import Logo from '@/assets/icons/Aikatan-logo.png'
 import NeonEffect from '@/assets/icons/neon-effect.png'
 
-// const CountDownTimerDynamic = dynamic(
-//   () => import('../components/CountDownTimer'),
-//   {
-//     ssr: false
-//   }
-// )
-
 const IntroSection = () => {
   return (
     <div className="z-10 w-full flex items-center flex-col gap-3">
@@ -34,7 +27,9 @@ const IntroSection = () => {
         </div>
       </div>
       <div className="z-20 typewriter font-bengali-noto-sans text-2xl sm:text-4xl 2xl:text-5xl font-semibold text-amber-400">
-        <p className={'border-r-4 border-amber-400 px-2'}>#Tech Meets Culture</p>
+        <p className={'border-r-4 border-amber-400 px-2'}>
+          #Tech Meets Culture
+        </p>
       </div>
       <h1 className="text-center text-lg sm:text-xl text-content font-semibold">
         Get ready to experience a world of <br />
@@ -42,7 +37,9 @@ const IntroSection = () => {
           <span className={'text-emerald-500'}>Creativity</span>,{' '}
           <span className={'text-amber-500 font-extrabold'}>Innovation</span>{' '}
           and{' '}
-          <span className={'text-sky-500 font-extrabold'}>Entertainment ❤️‍🔥</span>
+          <span className={'text-sky-500 font-extrabold'}>
+            Entertainment ❤️‍🔥
+          </span>
         </div>
       </h1>
 

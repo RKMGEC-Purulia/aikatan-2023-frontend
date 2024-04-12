@@ -1,107 +1,130 @@
-// aikatan start date - 07/05/23
 export const START_DATE_OF_FEST = 'Sun May 07 2023 00:00:00 GMT+0530'
 
 export const TechlavyaLastDateofRegistration = '05/02/23 11:59 pm'
 
 export const EventData = [
   {
-    date: '05/05/23',
+    date: '05/08/24',
     shedules: [
+      {
+        to: '08:00AM',
+        from: '',
+        name: 'School Reporting'
+      },
       {
         to: '09:00AM',
         from: '',
-        name: 'School Level Quiz, Codethon'
+        name: 'Inauguration Ceremony'
       },
+      {
+        to: '10:30AM',
+        from: '',
+        name: 'Final round of Quiz'
+      },
+      {
+        to: '01:00PM',
+        from: '',
+        name: 'Lunch Distribution'
+      },
+      {
+        to: '02:30PM',
+        from: '',
+        name: 'School Level Project Exhibition'
+      },
+      {
+        to: '4:00PM',
+        from: '',
+        name: 'Award Ceremony'
+      },
+      {
+        to: '11:00PM',
+        from: '',
+        name: 'AutoCAD Event'
+      }
+    ]
+  },
+  {
+    date: '05/09/24',
+    shedules: [
       {
         to: '10:00AM',
         from: '',
-        name: 'Project Exhibition School & College'
+        name: 'College Level Exhibition'
       },
       {
-        to: '03:00PM',
+        to: '2:00AM',
         from: '',
-        name: 'Graphics Designing, Seminar 1'
+        name: 'Alumni Interaction Session'
       },
       {
-        to: '05:00PM',
+        to: '5:30PM',
         from: '',
-        name: 'Chhau Nach'
-      },
-      {
-        to: '06:30AM',
-        from: '',
-        name: 'Reunion & Facilitation of seniors'
-      },
-      {
-        to: '09:30PM',
-        from: '',
-        name: 'Band performance of OCTAVE'
+        name: 'Treasure Hunt'
       }
     ]
   },
   {
-    date: '05/06/23',
+    date: '05/10/24',
     shedules: [
       {
-        to: '09:00AM',
+        to: '10:00AM',
         from: '',
-        name: 'Hackathon Question Declaration'
+        name: 'Codethan'
       },
       {
-        to: '11:00AM',
+        to: '12:30AM',
         from: '',
-        name: 'RoboRush, Esports 1 Life line'
+        name: 'Quiz'
       },
       {
-        to: '03:00PM',
+        to: '04:00PM',
         from: '',
-        name: 'College Level Quiz, Hackathon Presentation'
+        name: 'Robo Race'
       },
       {
         to: '05:00PM',
         from: '',
-        name: 'Cultural Events'
-      },
-      {
-        to: '10:00PM',
-        from: '',
-        name: 'Snigdhajit & Lifeline'
+        name: 'Graphic Design'
       }
     ]
   },
   {
-    date: '05/07/23',
+    date: '05/11/24',
     shedules: [
       {
         to: '09:00AM',
         from: '',
-        name: 'Esports 2'
+        name: 'Esports'
       },
       {
         to: '11:00AM',
         from: '',
-        name: 'Hackathon Presentation'
+        name: 'Mini Militia'
       },
       {
         to: '03:00PM',
         from: '',
-        name: 'Seminar 2'
+        name: 'BGMI'
+      },
+      {
+        to: '04:00PM',
+        from: '',
+        name: 'Free Fire'
       },
       {
         to: '05:00PM',
         from: '',
-        name: 'Cultural Events'
+        name: 'E-football'
       },
-
+      {
+        to: '06:00PM',
+        from: '',
+        name: 'Valorant'
+      },
       {
         to: '07:00PM',
         from: '',
-        name: 'Band performance of TRAP'
-      },
-      {
-        to: '10:00PM',
-        from: '',
-        name: 'Dj Night by Dj Koyel'
+        name: 'FIFA'
       }
     ]
   }
