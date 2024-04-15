@@ -75,20 +75,6 @@ const SponserShipData = [
     ]
   },
   {
-    id: 3,
-    imgSrc: SagarRajResorts.src,
-    description: '',
-    title: 'Sagar Raj Resorts',
-    location: '',
-    type: 'Hotel & Lodging Partner',
-    social: [
-      {
-        id: 'website',
-        link: 'https://sagarrajresort.com/'
-      }
-    ]
-  },
-  {
     id: 6,
     imgSrc: Reel2Real.src,
     description: '',
@@ -99,42 +85,6 @@ const SponserShipData = [
       {
         id: 'facebook',
         link: 'https://www.facebook.com/reel2real.ronit/'
-      }
-    ]
-  },
-  {
-    id: 11,
-    imgSrc: KBCityMall.src,
-    description: '',
-    title: 'KB City Mall',
-    location: '',
-    type: 'Asociate Sponsor',
-    social: [
-      {
-        id: 'facebook',
-        link: 'https://www.facebook.com/kbcitymallpurulia'
-      }
-    ]
-  },
-  {
-    id: 4,
-    imgSrc: ArdentComputech.src,
-    description: '',
-    title: 'Ardent Computech',
-    location: '',
-    type: 'Training Partner',
-    social: [
-      {
-        id: 'facebook',
-        link: 'https://www.facebook.com/Ardentgroup/'
-      },
-      {
-        id: 'linkedin',
-        link: 'https://www.linkedin.com/company/ardentinternships/'
-      },
-      {
-        id: 'website',
-        link: 'https://www.ardentcollaborations.com/'
       }
     ]
   },
@@ -167,20 +117,6 @@ const SponserShipData = [
       {
         id: 'facebook',
         link: 'https://www.facebook.com/profile.php?id=100063572274391'
-      }
-    ]
-  },
-  {
-    id: 8,
-    imgSrc: FriendsFM.src,
-    description: '',
-    title: '91.9Friends FM',
-    location: '',
-    type: 'Radio Partner',
-    social: [
-      {
-        id: 'instagram',
-        link: 'https://www.instagram.com/919friendsfm/'
       }
     ]
   },

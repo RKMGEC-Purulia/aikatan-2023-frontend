@@ -11,7 +11,8 @@ import TechLavya from '@/features/Home/components/TechLavya'
 import { AppPage } from '@/types'
 import { useProgress } from '@react-three/drei'
 import { tx } from '@twind/core'
-
+import PastCulturalEvent from '../components/PastCulturalEvent'
+import PastSponserShip from '../components/PastSponserShip'
 import { HeroSection } from '../components'
 
 const Home: AppPage = () => {
@@ -35,8 +36,10 @@ const Home: AppPage = () => {
           <TechLavya />
           <Esports />
           <CulturalEvent />
+          <PastCulturalEvent />
           <Gallary />
           <SponserShip />
+          <PastSponserShip />
           <ContactUs />
         </div>
       </div>

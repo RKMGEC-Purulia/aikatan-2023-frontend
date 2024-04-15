@@ -18,13 +18,12 @@ export const EsportsEventData = [
     imgSrc: FreeFire.src,
     name: 'FREE FIRE MAX',
     description: `The FREE FIRE MAX esports competition offers a unique chance to elevate your gaming experience and become a legend in the world of esports. Register now and let the games begin!`,
-    time: YetToBeAnnounced,
-    register_link:
-      'https://docs.google.com/forms/d/e/1FAIpQLSft52Xm7qPndepi40rkxPtzwB7-CeZrLkZRinlqOe0XZhPQgQ/viewform',
+    time: '11th May',
+    register_link: '',
     contact: [],
     prizes: {
       winner: YetToBeAnnounced,
-      runner_up: YetToBeAnnounced
+      runner_up: ''
     },
     location: YetToBeAnnounced,
     limitWord: 'default'
@@ -35,12 +34,12 @@ export const EsportsEventData = [
     name: 'BGMI',
     rules: '',
     description: `Ready to battle it out on the virtual battlegrounds? Put your skills with thrilling gameplay and nail-biting matches, and win amazing prizes. Don't miss out on this adrenaline-fueled gaming experience!`,
-    time: YetToBeAnnounced,
-    register_link: 'https://forms.gle/vPjsmEMiYf2w6a9VA',
+    time: '11th May',
+    register_link: '',
     contact: [],
     prizes: {
       winner: YetToBeAnnounced,
-      runner_up: YetToBeAnnounced
+      runner_up: ''
     },
     location: YetToBeAnnounced,
     limitWord: 'default'
@@ -50,14 +49,13 @@ export const EsportsEventData = [
     imgSrc: FIFA.src,
     name: 'FIFA-18',
     description: `Join the FIFA-18 e sports competition in college and compete against the best players. With exciting prizes up for grabs. Don't miss out on this incredible opportunity!`,
-    time: YetToBeAnnounced,
-    register_link:
-      'https://docs.google.com/forms/d/e/1FAIpQLSegacye9rhbAOSjv4zq6l1Erm-HUDl6bzSuYmr8NDANvWBHAA/viewform',
+    time: '11th May',
+    register_link: '',
     contact: [],
     rules: '',
     prizes: {
       winner: YetToBeAnnounced,
-      runner_up: YetToBeAnnounced
+      runner_up: ''
     },
     location: YetToBeAnnounced,
     limitWord: 'default'
@@ -69,13 +67,12 @@ export const EsportsEventData = [
     name: 'Asphalt-8',
     description:
       'Get ready to burn some rubber and dominate the track. This high-octane event is the ultimate test of speed, skill, and strategy. With thrilling prizes. Register now and start your engines!',
-    time: YetToBeAnnounced,
-    register_link:
-      'https://docs.google.com/forms/d/e/1FAIpQLSendeWNEt5Oq80SsKw0zxh1Y0-pXb6Ixo-woge6-zBxb4Ta0Q/viewform',
+    time: '11th May',
+    register_link: '',
     contact: [],
     prizes: {
       winner: YetToBeAnnounced,
-      runner_up: YetToBeAnnounced
+      runner_up: ''
     },
     location: YetToBeAnnounced,
     limitWord: 'default'
@@ -87,13 +84,12 @@ export const EsportsEventData = [
     name: 'Valorant',
     description:
       'Unleash your tactical prowess, with thrilling gameplay and unique character abilities, strategy and teamwork. Register today and take the first step towards becoming a Valorant legend!',
-    time: YetToBeAnnounced,
-    register_link:
-      'https://docs.google.com/forms/d/e/1FAIpQLSd9TGrcR6G-9CMjn8pUZoYFk2b7x9Deatg2_pq3OPdpWcNCcw/viewform',
+    time: '11th May',
+    register_link: '',
     contact: [],
     prizes: {
       winner: YetToBeAnnounced,
-      runner_up: YetToBeAnnounced
+      runner_up: ''
     },
     location: YetToBeAnnounced,
     limitWord: 'default'
@@ -104,13 +100,12 @@ export const EsportsEventData = [
     imgSrc: ClashRoyale.src,
     name: 'Clash Royale',
     description: `Get ready to clash with the best player in college. Battle it out in this fast-paced strategy game for a chance to win exciting prizes. Register today and get ready to clash!`,
-    time: YetToBeAnnounced,
-    register_link:
-      'https://docs.google.com/forms/d/e/1FAIpQLSci4aLKOmNEzxflT76JzPnCB_MosXDzGK6IJ6bm08t5_OgmfQ/viewform',
+    time: '11th May',
+    register_link: '',
     contact: [],
     prizes: {
       winner: YetToBeAnnounced,
-      runner_up: YetToBeAnnounced
+      runner_up: ''
     },
     location: YetToBeAnnounced,
     limitWord: 'default'
