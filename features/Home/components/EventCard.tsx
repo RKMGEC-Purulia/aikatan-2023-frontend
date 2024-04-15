@@ -179,7 +179,7 @@ export const EventCardV2 = ({
       }}>
       <SpotLightItem
         className={
-          'card-container h-[28rem] w-[24rem] p-4 rounded-xl shadow-xl overflow-hidden black-gradient'
+          'card-container h-[28rem]  w-[23rem] p-4 rounded-xl shadow-xl overflow-hidden black-gradient'
         }>
         <div className="card-flip text-content-medium">
           <div className=" h-full card-front flex flex-col justify-between">
@@ -212,22 +212,14 @@ export const EventCardV2 = ({
                     <p>
                       <b>Prizes:</b>
                     </p>
-                    {prizes.winner && <p>Winner - {prizes.winner}</p>}
+                    {prizes.winner && <p>{prizes.winner}</p>}
                     {prizes.runner_up_2nd ? (
                       <>
-                        {prizes.runner_up && (
-                          <p>1st RunnerUp - {prizes.runner_up}</p>
-                        )}
-                        {prizes.runner_up_2nd && (
-                          <p>2nd RunnerUp - {prizes.runner_up_2nd}</p>
-                        )}
+                        {prizes.runner_up && <p>{prizes.runner_up}</p>}
+                        {prizes.runner_up_2nd && <p>{prizes.runner_up_2nd}</p>}
                       </>
                     ) : (
-                      <>
-                        {prizes.runner_up && (
-                          <p>RunnerUp - {prizes.runner_up}</p>
-                        )}
-                      </>
+                      <>{prizes.runner_up && <p>{prizes.runner_up}</p>}</>
                     )}
                   </>
                 )}
@@ -263,21 +255,28 @@ export const EventCardV2 = ({
                           return number
                         }
                       })
-                      .join(', ')}
+                      .join('')}
                   </p>
                 </>
               )}
             </div>
             <div className={'flex flex-row gap-2'}>
-              {registrationLink && (
-                <a>
+              {registrationLink ? (
+                <a href={registrationLink}>
                   <button
                     className={
                       'h-full bg-blue-700 rounded-sm px-3 2xl:px-4 py-0.5 2xl:py-1 2xl:text-lg hover:bg-blue-900'
                     }>
-                    Coming Soon...
+                    Register Now
                   </button>
                 </a>
+              ) : (
+                <button
+                  className={
+                    'h-full bg-blue-700 rounded-sm px-3 2xl:px-4 py-0.5 2xl:py-1 2xl:text-lg hover:bg-blue-900'
+                  }>
+                  Coming Soon....
+                </button>
               )}
               {rulesLink && (
                 <a href={rulesLink} target={'_blank'} rel="noreferrer">

@@ -10,7 +10,8 @@ const EventCardWrapper = ({
   className?: string
 }) => {
   return (
-    <div className={tx('flex flex-wrap gap-10 justify-center', className)}>
+    <div
+      className={tx('flex flex-wrap gap-10 justify-center px-4 ', className)}>
       {children}
     </div>
   )

@@ -22,11 +22,6 @@ export const EventData = [
         name: 'Final round of Quiz'
       },
       {
-        to: '01:00PM',
-        from: '',
-        name: 'Lunch Distribution'
-      },
-      {
         to: '02:30PM',
         from: '',
         name: 'School Level Project Exhibition'
@@ -91,11 +86,6 @@ export const EventData = [
   {
     date: '05/11/24',
     shedules: [
-      {
-        to: '09:00AM',
-        from: '',
-        name: 'Esports'
-      },
       {
         to: '11:00AM',
         from: '',
