@@ -11,7 +11,7 @@ interface paymentType {
   money: string
 }
 
-export default function Payment({ upiId, name, money }: paymentType) {
+const Payment: React.FC<paymentType> = ({ upiId, name, money }) => {
   const [qrCode, setQrCode] = useState('')
   useEffect(() => {
     upiqrcode({
@@ -28,11 +28,11 @@ export default function Payment({ upiId, name, money }: paymentType) {
       })
   }, [])
   const copy = () => {
-    navigator.clipboard.writeText(upiId).then(async function () {
+    navigator.clipboard.writeText(upiId).then(async function (_resolve) {
       const copyId = document.getElementById('copy-id')
       if (copyId) {
         copyId.innerHTML = 'Copied !!!'
-        await new Promise((r) => setTimeout(r, 2000))
+        await new Promise((resolve) => setTimeout(resolve, 2000))
         copyId.innerHTML = 'Copy'
       }
     })
@@ -90,3 +90,5 @@ export default function Payment({ upiId, name, money }: paymentType) {
     </>
   )
 }
+
+export default Payment

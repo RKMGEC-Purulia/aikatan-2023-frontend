@@ -70,9 +70,9 @@ const Checkout = () => {
   }
 
   if (
-    paymentDetails.upiId != '' &&
-    paymentDetails.name != '' &&
-    paymentDetails.amount != ''
+    paymentDetails.upiId !== '' &&
+    paymentDetails.name !== '' &&
+    paymentDetails.amount !== ''
   ) {
     return (
       <Payment

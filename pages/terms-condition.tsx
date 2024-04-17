@@ -6,7 +6,7 @@ const TermsAndConditions = () => {
       <h1 className="text-3xl font-bold mb-4">Terms and Conditions</h1>
       <p>
         Welcome to aikatan.org.in! These terms and conditions outline the rules
-        and regulations for the use of Aikatan's Website, located at{' '}
+        and regulations for the use of Aikatan&apos;s Website, located at{' '}
         <a href="https://www.aikatan.org.in" className="text-blue-500">
           https://www.aikatan.org.in
         </a>
@@ -16,7 +16,7 @@ const TermsAndConditions = () => {
       <h2 className="text-2xl font-bold mt-8 mb-4">1. Cookies</h2>
       <p>
         We employ the use of cookies. By accessing aikatan.org.in, you agreed to
-        use cookies in agreement with the Aikatan's Privacy Policy.
+        use cookies in agreement with the Aikatan&apos;s Privacy Policy.
       </p>
 
       <h2 className="text-2xl font-bold mt-8 mb-4">2. License</h2>

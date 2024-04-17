@@ -248,7 +248,7 @@ export const EventCardV2 = ({
                           return number
                         }
                       })
-                      .join('')}
+                      .join(' , ')}
                   </p>
                 </>
               )}

@@ -5,7 +5,7 @@ const PrivacyPolicy = () => {
     <div className="container mx-auto px-4 py-8 pt-[80px]">
       <h1 className="text-3xl font-bold mb-4">Privacy Policy</h1>
       <p className="mb-4">
-        Your privacy is important to us. It is Aikatan.org.in's policy to
+        Your privacy is important to us. It is Aikatan.org.in&apos;s policy to
         respect your privacy regarding any information we may collect while
         operating our website. This Privacy Policy applies to
         www.aikatan.org.in. We respect your privacy and are committed to
@@ -17,11 +17,11 @@ const PrivacyPolicy = () => {
         1. Personally-Identifying Information
       </h2>
       <p className="mb-4">
-        Certain visitors to Aikatan.org.in's websites choose to interact with
-        Aikatan.org.in in ways that require Aikatan.org.in to gather personally
-        identifying information. The amount and type of information that
-        Aikatan.org.in gathers depends on the nature of the interaction. For
-        example, we ask visitors who leave a comment at{' '}
+        Certain visitors to Aikatan.org.in&apos;s websites choose to interact
+        with Aikatan.org.in in ways that require Aikatan.org.in to gather
+        personally identifying information. The amount and type of information
+        that Aikatan.org.in gathers depends on the nature of the interaction.
+        For example, we ask visitors who leave a comment at{' '}
         <a href="https://www.aikatan.org.in" className="text-blue-500">
           https://www.aikatan.org.in
         </a>{' '}
@@ -42,7 +42,7 @@ const PrivacyPolicy = () => {
       </h2>
       <p className="mb-4">
         Although most changes are likely to be minor, Aikatan.org.in may change
-        its Privacy Policy from time to time, and in Aikatan.org.in's sole
+        its Privacy Policy from time to time, and in Aikatan.org.in&apos;s sole
         discretion. Aikatan.org.in encourages visitors to frequently check this
         page for any changes to its Privacy Policy. Your continued use of this
         site after any change in this Privacy Policy will constitute your
