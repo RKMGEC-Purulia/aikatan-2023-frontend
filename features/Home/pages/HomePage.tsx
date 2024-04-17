@@ -14,6 +14,7 @@ import { tx } from '@twind/core'
 import PastCulturalEvent from '../components/PastCulturalEvent'
 import PastSponserShip from '../components/PastSponserShip'
 import { HeroSection } from '../components'
+import Paybtn from '../components/Paybtn'
 
 const Home: AppPage = () => {
   const { progress } = useProgress()
@@ -32,6 +33,7 @@ const Home: AppPage = () => {
           <HeroSection />
         </div>
         <div className={'z-10 flex flex-col mb-20 mt-10'}>
+          <Paybtn />
           <EventSchedule />
           <TechLavya />
           <Esports />
@@ -40,7 +42,7 @@ const Home: AppPage = () => {
           <Gallary />
           <SponserShip />
           <PastSponserShip />
-          <ContactUs />
+          {/* <ContactUs /> */}
         </div>
       </div>
     </>
