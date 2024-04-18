@@ -12,10 +12,7 @@ const Paybtn = () => {
           Book Now
         </button>
       </Link>
-      <p className="text-2xl">
-        Book your Pass{' '}
-        <span className="text-green-500 font-semibold">@899/-</span> Only
-      </p>
+      <p className="text-2xl">Book your Pass </p>
     </div>
   )
 }
