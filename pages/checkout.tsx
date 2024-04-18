@@ -24,7 +24,7 @@ const Checkout = () => {
     formState: { errors }
   } = useForm()
   const [paymentDetails, setPaymentDetails] = useState({
-    upiId: '8158946895@paytm',
+    upiId: '9875332886800@paytm',
     name: '',
     amount: ''
   })

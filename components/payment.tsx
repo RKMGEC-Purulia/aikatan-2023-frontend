@@ -44,8 +44,14 @@ const Payment: React.FC<paymentType> = ({ upiId, name, money }) => {
       <div className=" w-full h-screen pt-[80px]">
         <div className="max-w-sm mx-auto bg-gray-800 shadow-xl rounded-lg p-6">
           <div className="qr-container items-center justify-center place-content-center ">
-            <div className="border border-zinc-950">
-              <Image src={qrCode} alt="QR Code" width={300} height={300} />
+            <div className="border border-zinc-950 w-[300px] h-auto  mx-auto ">
+              <Image
+                src={qrCode}
+                alt="QR Code"
+                width={300}
+                height={300}
+                className="w-full object-contain"
+              />
             </div>
             <div className="text-center justify-center place-content-center items-center mt-5 text-xl/2">
               <p>Scan the QR code</p>
