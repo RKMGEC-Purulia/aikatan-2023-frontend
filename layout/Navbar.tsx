@@ -44,7 +44,9 @@ const navigation: Record<string, Array<NavigationItem>> = {
       menus: [
         { label: 'Sponsers', to: '/#partner-sponsor' },
         { label: 'Contact Us', to: '/#contact-us' },
-        { label: 'About', to: '/about' }
+        { label: 'About', to: '/about' },
+        { label: 'T&C', to: 'terms-condition' },
+        { label: 'Privacy & Policy', to: '/privacy-policy' }
       ]
     }
   ],
@@ -97,7 +99,7 @@ const Navbar = () => {
                             leaveFrom="transform opacity-100 scale-100"
                             leaveTo="transform opacity-0 scale-95">
                             <Menu.Items className="origin-top-left absolute left-0 mt-2 w-max rounded-md shadow-lg bg-gray-800 focus:outline-none">
-                              <div className="py-1">
+                              <div className="px-3 py-2">
                                 {item.menus.map((item) => (
                                   <Menu.Item
                                     key={item.label}

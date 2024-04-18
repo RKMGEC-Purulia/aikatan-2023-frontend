@@ -1,11 +1,13 @@
 import React from 'react'
+
 import ArdentComputech from '@/assets/sponsers/ardent_logo.webp'
 import KBCityMall from '@/assets/sponsers/city-mall.webp'
 import FriendsFM from '@/assets/sponsers/friends-fm.webp'
 import SagarRajResorts from '@/assets/sponsers/sagar-raj-resorts.webp'
 import SpotLightItem from '@/features/Home/components/SpotLightItem'
-import { socialIconMap, SocialCardWrapper, SocialCard } from './SponserShip'
+
 import EventCardWrapper from './EventCardWrapper'
+import { SocialCard, SocialCardWrapper, socialIconMap } from './SponserShip'
 
 const PastSponserShipData = [
   {

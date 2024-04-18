@@ -41,7 +41,7 @@ export const TechLavyaEvents = [
       runner_up: "2. Goodies for Winner's of internal games"
     },
     location: 'Yet to be announced!!',
-    entry_fee: ''
+    last_date: '25th April'
   },
   {
     id: 2,
@@ -69,7 +69,7 @@ export const TechLavyaEvents = [
       runner_up: ''
     },
     location: 'Yet to be announced!!',
-    entry_fee: ''
+    last_date: ''
   },
   {
     id: 3,
@@ -96,7 +96,7 @@ export const TechLavyaEvents = [
       winner: 'Yet to be announced!!',
       runner_up: ''
     },
-    entry_fee: '',
+    last_date: '',
     imgSrc: Exibition.src,
     location: 'Yet to be announced!!'
   },
@@ -110,11 +110,11 @@ export const TechLavyaEvents = [
       'Here comes one of the grandest project exhibition of the town for science and technology like no other. So buckle up and put your projects and stand a chance to win cool prizes.',
     rules_regulation_link:
       'https://drive.google.com/file/d/1LydTPN8M4WBapFf054mp63_3-mXmorJO/view?usp=sharing',
-    register_link: '',
+    register_link: 'https://forms.gle/o25WR741EFipvL73A',
     contact: [
       {
         name: '',
-        number: 'Yet to be announced!!'
+        number: '+91 9123353573'
       },
       {
         name: '',
@@ -127,7 +127,7 @@ export const TechLavyaEvents = [
     },
     imgSrc: Exibition.src,
     location: 'Yet to be announced!!',
-    entry_fee: ''
+    last_date: '25th April'
   },
   {
     id: 5,
@@ -156,7 +156,7 @@ export const TechLavyaEvents = [
       runner_up: ''
     },
     location: 'EE Seminar Hall',
-    entry_fee: ''
+    last_date: ''
   },
 
   {
@@ -186,7 +186,7 @@ export const TechLavyaEvents = [
       runner_up: ''
     },
     location: 'Yet to be announced!!',
-    entry_fee: ''
+    last_date: ''
   },
   {
     id: 7,
@@ -199,11 +199,11 @@ export const TechLavyaEvents = [
       'Design your own robo car and prepare them for dirt, hills, pots and obstacles!!!!! So rub out the dust from your tools here the time comes to start innovation with exciting prizes for the winners.',
     rules_regulation_link:
       'https://drive.google.com/file/d/1unn2SRYUfMXJknRAxo_idAPH0WYmZzCs/view?usp=sharing',
-    register_link: '',
+    register_link: 'https://forms.gle/o25WR741EFipvL73A',
     contact: [
       {
         name: '',
-        number: 'Yet to be announced!!'
+        number: '+91 8697053297'
       },
       {
         name: '',
@@ -216,7 +216,7 @@ export const TechLavyaEvents = [
       runner_up_2nd: ''
     },
     location: 'Yet to be announced!!',
-    entry_fee: ''
+    last_date: '25th April'
   },
   {
     id: 8,
@@ -245,7 +245,7 @@ export const TechLavyaEvents = [
       runner_up: ''
     },
     location: 'Yet to be announced!!',
-    entry_fee: ''
+    last_date: ''
   }
 ] as const
 
@@ -275,7 +275,7 @@ const TechLavya = () => {
             time,
             location,
             limitWord,
-            entry_fee
+            last_date
           }) => (
             <EventCardV2
               key={id}
@@ -290,7 +290,7 @@ const TechLavya = () => {
               time={time}
               location={location}
               limitWord={limitWord}
-              entry_fee={entry_fee}
+              last_date={last_date}
             />
           )
         )}

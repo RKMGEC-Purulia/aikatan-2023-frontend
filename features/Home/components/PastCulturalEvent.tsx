@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 import RockingTwilight from '@/assets/events/1.webp'
 // import Reunion from '@/assets/events/3.webp'
 import Snigdhajit from '@/assets/events/4.webp'
@@ -6,9 +8,8 @@ import DJkoyel from '@/assets/events/6.webp'
 import TheOctaves from '@/assets/events/7.webp'
 import ChoNach from '@/assets/events/8.webp'
 
-import EventCardWrapper from './EventCardWrapper'
 import { CulturalEventCard } from './CulturalEventCard'
-import Link from 'next/link'
+import EventCardWrapper from './EventCardWrapper'
 
 const PastCulturalEventData = [
   // {

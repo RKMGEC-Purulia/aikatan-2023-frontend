@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
 import { motion } from 'framer-motion'
+import React, { useState } from 'react'
 
 import SpotLightItem from './SpotLightItem'
 
@@ -23,7 +23,7 @@ type EventCardProps = {
   }[]
   limitWord: number | 'default'
   className?: string
-  entry_fee?: string
+  last_date?: string
 }
 
 export const EventCard = ({
@@ -166,7 +166,7 @@ export const EventCardV2 = ({
   prizes,
   time,
   location,
-  entry_fee
+  last_date
 }: EventCardProps) => {
   return (
     <motion.div
@@ -199,13 +199,6 @@ export const EventCardV2 = ({
           </div>
           <div className="card-back p-3 flex flex-col justify-evenly">
             <div className={'flex flex-col'}>
-              {entry_fee && (
-                <>
-                  <p>
-                    <b>Entry Fee:</b> {entry_fee}
-                  </p>
-                </>
-              )}
               {prizes &&
                 (prizes.winner || prizes.runner_up || prizes.runner_up_2nd) && (
                   <>
@@ -255,30 +248,37 @@ export const EventCardV2 = ({
                           return number
                         }
                       })
-                      .join('')}
+                      .join(' , ')}
                   </p>
                 </>
               )}
             </div>
             <div className={'flex flex-row gap-2'}>
               {registrationLink ? (
-                <a href={registrationLink}>
-                  <button
-                    className={
-                      'h-full bg-blue-700 rounded-sm px-3 2xl:px-4 py-0.5 2xl:py-1 2xl:text-lg hover:bg-blue-900'
-                    }>
-                    Register Now
-                  </button>
-                </a>
+                <div>
+                  <a href={registrationLink}>
+                    <button
+                      className={
+                        ' bg-blue-700 rounded-md py-2 px-3 2xl:px-4 py-0.5 2xl:py-1 2xl:text-lg text-white hover:bg-blue-800'
+                      }>
+                      Register Now
+                    </button>
+                  </a>
+                  {last_date && (
+                    <p className=" text-sm py-3">
+                      last date of registration {last_date}
+                    </p>
+                  )}
+                </div>
               ) : (
                 <button
                   className={
-                    'h-full bg-blue-700 rounded-sm px-3 2xl:px-4 py-0.5 2xl:py-1 2xl:text-lg hover:bg-blue-900'
+                    'bg-blue-700 rounded-md py-2 px-3 2xl:px-4 py-0.5 2xl:py-1 2xl:text-lg text-white hover:bg-blue-800'
                   }>
                   Coming Soon....
                 </button>
               )}
-              {rulesLink && (
+              {/* {rulesLink && (
                 <a href={rulesLink} target={'_blank'} rel="noreferrer">
                   <button
                     className={
@@ -287,7 +287,7 @@ export const EventCardV2 = ({
                     Rules
                   </button>
                 </a>
-              )}
+              )} */}
             </div>
           </div>
         </div>

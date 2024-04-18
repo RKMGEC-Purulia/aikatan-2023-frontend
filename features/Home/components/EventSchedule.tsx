@@ -1,11 +1,13 @@
 import React from 'react'
-import { EventData } from '@/data'
+import { MdDateRange } from 'react-icons/md'
 import {
   VerticalTimeline,
   VerticalTimelineElement
 } from 'react-vertical-timeline-component'
+
+import { EventData } from '@/data'
+
 import 'react-vertical-timeline-component/style.min.css'
-import { MdDateRange } from 'react-icons/md'
 
 const EventSchedule = () => {
   return (

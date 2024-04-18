@@ -4,9 +4,8 @@ import RockingTwilight from '@/assets/events/1.webp'
 import TheOctaves from '@/assets/events/7.webp'
 import ChoNach from '@/assets/events/8.webp'
 
-import EventCardWrapper from './EventCardWrapper'
 import { CulturalEventCard } from './CulturalEventCard'
-import Link from 'next/link'
+import EventCardWrapper from './EventCardWrapper'
 
 const CulturalEventData = [
   {
@@ -91,20 +90,6 @@ const CulturalEvent = () => {
           )
         )}
       </EventCardWrapper>
-      <div className={'flex flex-col gap-2 items-center my-10'}>
-        <p className="text-2xl">
-          Book your Pass{' '}
-          <span className="text-green-500 font-semibold">@899/-</span> Only
-        </p>
-        <Link href={''}>
-          <button
-            className={
-              'bg-blue-700 px-4 rounded-sm py-1 text-lg hover:bg-blue-900'
-            }>
-            Book Now
-          </button>
-        </Link>
-      </div>
     </section>
   )
 }
