@@ -39,6 +39,8 @@
   "rules": {
     "camelcase": "off",
     "no-use-before-define": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
     "no-unused-vars": [
       "error",
       {

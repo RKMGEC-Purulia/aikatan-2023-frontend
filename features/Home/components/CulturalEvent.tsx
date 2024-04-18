@@ -4,8 +4,8 @@ import RockingTwilight from '@/assets/events/1.webp'
 import TheOctaves from '@/assets/events/7.webp'
 import ChoNach from '@/assets/events/8.webp'
 
-import EventCardWrapper from './EventCardWrapper'
 import { CulturalEventCard } from './CulturalEventCard'
+import EventCardWrapper from './EventCardWrapper'
 
 const CulturalEventData = [
   {

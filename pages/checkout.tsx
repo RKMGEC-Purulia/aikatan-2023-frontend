@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
-import { Player } from '@lottiefiles/react-lottie-player'
-import { useForm } from 'react-hook-form'
-import Payment from '../components/payment'
 import { message } from 'antd'
+import React, { useState } from 'react'
+import { useForm } from 'react-hook-form'
+
+import { Player } from '@lottiefiles/react-lottie-player'
+
+import Payment from '../components/payment'
 
 const Checkout = () => {
   // <script>

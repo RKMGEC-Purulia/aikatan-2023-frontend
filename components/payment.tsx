@@ -1,9 +1,10 @@
 'use client'
-import { useState, useEffect } from 'react'
 import Image from 'next/image'
-import upiqrcode from 'upiqrcode'
-import { Player } from '@lottiefiles/react-lottie-player'
 import Link from 'next/link'
+import { useEffect, useState } from 'react'
+import upiqrcode from 'upiqrcode'
+
+import { Player } from '@lottiefiles/react-lottie-player'
 
 interface paymentType {
   upiId: string
@@ -48,7 +49,7 @@ const Payment: React.FC<paymentType> = ({ upiId, name, money }) => {
             </div>
             <div className="text-center justify-center place-content-center items-center mt-5 text-xl/2">
               <p>Scan the QR code</p>
-              {money != '0' ? (
+              {money !== '0' ? (
                 <p>
                   Amount: <strong>₹ {money}</strong>{' '}
                 </p>

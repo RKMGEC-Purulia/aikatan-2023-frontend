@@ -1,5 +1,6 @@
-import SpotLightItem from './SpotLightItem'
 import { motion } from 'framer-motion'
+
+import SpotLightItem from './SpotLightItem'
 
 type CulturalEventCardProps = {
   duration: number

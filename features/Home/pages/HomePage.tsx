@@ -11,9 +11,10 @@ import TechLavya from '@/features/Home/components/TechLavya'
 import { AppPage } from '@/types'
 import { useProgress } from '@react-three/drei'
 import { tx } from '@twind/core'
+
+import { HeroSection } from '../components'
 import PastCulturalEvent from '../components/PastCulturalEvent'
 import PastSponserShip from '../components/PastSponserShip'
-import { HeroSection } from '../components'
 import Paybtn from '../components/Paybtn'
 
 const Home: AppPage = () => {
