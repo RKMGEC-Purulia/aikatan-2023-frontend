@@ -122,7 +122,7 @@ export const TechLavyaEvents = [
       }
     ],
     prizes: {
-      winner: 'Yet to be announced!!',
+      winner: 'Upto 12k',
       runner_up: ''
     },
     imgSrc: Exibition.src,
@@ -199,7 +199,7 @@ export const TechLavyaEvents = [
       'Design your own robo car and prepare them for dirt, hills, pots and obstacles!!!!! So rub out the dust from your tools here the time comes to start innovation with exciting prizes for the winners.',
     rules_regulation_link:
       'https://drive.google.com/file/d/1unn2SRYUfMXJknRAxo_idAPH0WYmZzCs/view?usp=sharing',
-    register_link: 'https://forms.gle/o25WR741EFipvL73A',
+    register_link: 'https://forms.gle/NNXTdiKjoEjGXX456',
     contact: [
       {
         name: '',
@@ -207,15 +207,16 @@ export const TechLavyaEvents = [
       },
       {
         name: '',
-        number: ''
+        number: '+91 8250595410'
       }
     ],
     prizes: {
-      winner: 'Yet to be announced!!',
+      winner:
+        'Up to 10k & Trophies for winners and Energy drinks  for the participant teams',
       runner_up: '',
       runner_up_2nd: ''
     },
-    location: 'Yet to be announced!!',
+    location: 'Academic Building 2 Ground',
     last_date: '25th April'
   },
   {

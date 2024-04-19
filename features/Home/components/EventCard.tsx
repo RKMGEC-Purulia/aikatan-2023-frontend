@@ -75,7 +75,7 @@ export const EventCard = ({
                   {prizes && (prizes.winner || prizes.runner_up) && (
                     <div>
                       <p>
-                        <b>Prizes:</b>
+                        <b>Prize Pool:</b>
                       </p>
                       {prizes.winner && <p>Winner - {prizes.winner}</p>}
                       {prizes.runner_up && <p>RunnerUp - {prizes.runner_up}</p>}
@@ -203,7 +203,7 @@ export const EventCardV2 = ({
                 (prizes.winner || prizes.runner_up || prizes.runner_up_2nd) && (
                   <>
                     <p>
-                      <b>Prizes:</b>
+                      <b>Prize Pool:</b>
                     </p>
                     {prizes.winner && <p>{prizes.winner}</p>}
                     {prizes.runner_up_2nd ? (
@@ -256,7 +256,7 @@ export const EventCardV2 = ({
             <div className={'flex flex-row gap-2'}>
               {registrationLink ? (
                 <div>
-                  <a href={registrationLink}>
+                  <a href={registrationLink} target="_blank">
                     <button
                       className={
                         ' bg-blue-700 rounded-md py-2 px-3 2xl:px-4 py-0.5 2xl:py-1 2xl:text-lg text-white hover:bg-blue-800'
