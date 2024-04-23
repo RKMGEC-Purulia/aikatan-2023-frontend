@@ -4,6 +4,7 @@ import Asphalt from '@/assets/events/asphalt.webp'
 import BGMI from '@/assets/events/bgmi.webp'
 import ClashRoyale from '@/assets/events/ClashRoyale.webp'
 import FIFA from '@/assets/events/Fifa.webp'
+import Mini_Militia from '@/assets/events/Mini_Militia.webp'
 import FreeFire from '@/assets/events/freefire.webp'
 import Valorant from '@/assets/events/valorant.webp'
 import { YetToBeAnnounced } from '@/features/Home/components/TechLavya'
@@ -19,8 +20,12 @@ export const EsportsEventData = [
     name: 'FREE FIRE MAX',
     description: `The FREE FIRE MAX esports competition offers a unique chance to elevate your gaming experience and become a legend in the world of esports. Register now and let the games begin!`,
     time: '11th May',
-    register_link: '',
-    contact: [],
+    register_link: 'https://forms.gle/uQvsqdY3CJuw1KJA6',
+    contact: [
+      {
+        number: '+91 9749961217'
+      }
+    ],
     prizes: {
       winner: YetToBeAnnounced,
       runner_up: ''
@@ -47,11 +52,15 @@ export const EsportsEventData = [
   {
     id: 3,
     imgSrc: FIFA.src,
-    name: 'FIFA-18',
-    description: `Join the FIFA-18 e sports competition in college and compete against the best players. With exciting prizes up for grabs. Don't miss out on this incredible opportunity!`,
+    name: 'eFootball',
+    description: `Join the eFootball e sports competition in college and compete against the best players. With exciting prizes up for grabs. Don't miss out on this incredible opportunity!`,
     time: '11th May',
-    register_link: '',
-    contact: [],
+    register_link: 'https://forms.gle/ysJy67o6tLu5DL6K7',
+    contact: [
+      {
+        number: '+91 9749961217'
+      }
+    ],
     rules: '',
     prizes: {
       winner: YetToBeAnnounced,
@@ -62,6 +71,26 @@ export const EsportsEventData = [
   },
   {
     id: 4,
+    imgSrc: Mini_Militia.src,
+    name: 'Mini Militia ',
+    description: `Join the Mini Militia  e sports competition in college and compete against the best players. With exciting prizes up for grabs. Don't miss out on this incredible opportunity!`,
+    time: '11th May',
+    register_link: 'https://forms.gle/AEqLvKPvL6oUuGBi9',
+    contact: [
+      {
+        number: '+91 9749961217'
+      }
+    ],
+    rules: '',
+    prizes: {
+      winner: YetToBeAnnounced,
+      runner_up: ''
+    },
+    location: YetToBeAnnounced,
+    limitWord: 'default'
+  },
+  {
+    id: 5,
     rules: '',
     imgSrc: Asphalt.src,
     name: 'Asphalt-8',
@@ -78,7 +107,7 @@ export const EsportsEventData = [
     limitWord: 'default'
   },
   {
-    id: 5,
+    id: 6,
     rules: '',
     imgSrc: Valorant.src,
     name: 'Valorant',
@@ -95,7 +124,7 @@ export const EsportsEventData = [
     limitWord: 'default'
   },
   {
-    id: 6,
+    id: 7,
     rules: '',
     imgSrc: ClashRoyale.src,
     name: 'Clash Royale',
