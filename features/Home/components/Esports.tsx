@@ -23,6 +23,7 @@ export const EsportsEventData = [
     register_link: 'https://forms.gle/uQvsqdY3CJuw1KJA6',
     contact: [
       {
+        name: '',
         number: '+91 9749961217'
       }
     ],
@@ -41,7 +42,12 @@ export const EsportsEventData = [
     description: `Ready to battle it out on the virtual battlegrounds? Put your skills with thrilling gameplay and nail-biting matches, and win amazing prizes. Don't miss out on this adrenaline-fueled gaming experience!`,
     time: '11th May',
     register_link: '',
-    contact: [],
+    contact: [
+      {
+        name: '',
+        number: 'Yet to be announced!!'
+      }
+    ],
     prizes: {
       winner: YetToBeAnnounced,
       runner_up: ''
@@ -58,6 +64,7 @@ export const EsportsEventData = [
     register_link: 'https://forms.gle/ysJy67o6tLu5DL6K7',
     contact: [
       {
+        name: '',
         number: '+91 9749961217'
       }
     ],
@@ -78,6 +85,7 @@ export const EsportsEventData = [
     register_link: 'https://forms.gle/AEqLvKPvL6oUuGBi9',
     contact: [
       {
+        name: '',
         number: '+91 9749961217'
       }
     ],
@@ -98,7 +106,12 @@ export const EsportsEventData = [
       'Get ready to burn some rubber and dominate the track. This high-octane event is the ultimate test of speed, skill, and strategy. With thrilling prizes. Register now and start your engines!',
     time: '11th May',
     register_link: '',
-    contact: [],
+    contact: [
+      {
+        name: '',
+        number: 'Yet to be announced!!'
+      }
+    ],
     prizes: {
       winner: YetToBeAnnounced,
       runner_up: ''
@@ -115,7 +128,12 @@ export const EsportsEventData = [
       'Unleash your tactical prowess, with thrilling gameplay and unique character abilities, strategy and teamwork. Register today and take the first step towards becoming a Valorant legend!',
     time: '11th May',
     register_link: '',
-    contact: [],
+    contact: [
+      {
+        name: '',
+        number: 'Yet to be announced!!'
+      }
+    ],
     prizes: {
       winner: YetToBeAnnounced,
       runner_up: ''
@@ -131,7 +149,12 @@ export const EsportsEventData = [
     description: `Get ready to clash with the best player in college. Battle it out in this fast-paced strategy game for a chance to win exciting prizes. Register today and get ready to clash!`,
     time: '11th May',
     register_link: '',
-    contact: [],
+    contact: [
+      {
+        name: '',
+        number: 'Yet to be announced!!'
+      }
+    ],
     prizes: {
       winner: YetToBeAnnounced,
       runner_up: ''
