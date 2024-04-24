@@ -4,6 +4,7 @@ import Asphalt from '@/assets/events/asphalt.webp'
 import BGMI from '@/assets/events/bgmi.webp'
 import ClashRoyale from '@/assets/events/ClashRoyale.webp'
 import FIFA from '@/assets/events/Fifa.webp'
+import Mini_Militia from '@/assets/events/Mini_Militia.webp'
 import FreeFire from '@/assets/events/freefire.webp'
 import Valorant from '@/assets/events/valorant.webp'
 import { YetToBeAnnounced } from '@/features/Home/components/TechLavya'
@@ -19,8 +20,13 @@ export const EsportsEventData = [
     name: 'FREE FIRE MAX',
     description: `The FREE FIRE MAX esports competition offers a unique chance to elevate your gaming experience and become a legend in the world of esports. Register now and let the games begin!`,
     time: '11th May',
-    register_link: '',
-    contact: [],
+    register_link: 'https://forms.gle/uQvsqdY3CJuw1KJA6',
+    contact: [
+      {
+        name: '',
+        number: '+91 9749961217'
+      }
+    ],
     prizes: {
       winner: YetToBeAnnounced,
       runner_up: ''
@@ -36,7 +42,12 @@ export const EsportsEventData = [
     description: `Ready to battle it out on the virtual battlegrounds? Put your skills with thrilling gameplay and nail-biting matches, and win amazing prizes. Don't miss out on this adrenaline-fueled gaming experience!`,
     time: '11th May',
     register_link: '',
-    contact: [],
+    contact: [
+      {
+        name: '',
+        number: 'Yet to be announced!!'
+      }
+    ],
     prizes: {
       winner: YetToBeAnnounced,
       runner_up: ''
@@ -47,11 +58,16 @@ export const EsportsEventData = [
   {
     id: 3,
     imgSrc: FIFA.src,
-    name: 'FIFA-18',
-    description: `Join the FIFA-18 e sports competition in college and compete against the best players. With exciting prizes up for grabs. Don't miss out on this incredible opportunity!`,
+    name: 'eFootball',
+    description: `Join the eFootball e sports competition in college and compete against the best players. With exciting prizes up for grabs. Don't miss out on this incredible opportunity!`,
     time: '11th May',
-    register_link: '',
-    contact: [],
+    register_link: 'https://forms.gle/ysJy67o6tLu5DL6K7',
+    contact: [
+      {
+        name: '',
+        number: '+91 9749961217'
+      }
+    ],
     rules: '',
     prizes: {
       winner: YetToBeAnnounced,
@@ -62,14 +78,18 @@ export const EsportsEventData = [
   },
   {
     id: 4,
-    rules: '',
-    imgSrc: Asphalt.src,
-    name: 'Asphalt-8',
-    description:
-      'Get ready to burn some rubber and dominate the track. This high-octane event is the ultimate test of speed, skill, and strategy. With thrilling prizes. Register now and start your engines!',
+    imgSrc: Mini_Militia.src,
+    name: 'Mini Militia ',
+    description: `Join the Mini Militia  e sports competition in college and compete against the best players. With exciting prizes up for grabs. Don't miss out on this incredible opportunity!`,
     time: '11th May',
-    register_link: '',
-    contact: [],
+    register_link: 'https://forms.gle/AEqLvKPvL6oUuGBi9',
+    contact: [
+      {
+        name: '',
+        number: '+91 9749961217'
+      }
+    ],
+    rules: '',
     prizes: {
       winner: YetToBeAnnounced,
       runner_up: ''
@@ -80,13 +100,18 @@ export const EsportsEventData = [
   {
     id: 5,
     rules: '',
-    imgSrc: Valorant.src,
-    name: 'Valorant',
+    imgSrc: Asphalt.src,
+    name: 'Asphalt-8',
     description:
-      'Unleash your tactical prowess, with thrilling gameplay and unique character abilities, strategy and teamwork. Register today and take the first step towards becoming a Valorant legend!',
+      'Get ready to burn some rubber and dominate the track. This high-octane event is the ultimate test of speed, skill, and strategy. With thrilling prizes. Register now and start your engines!',
     time: '11th May',
     register_link: '',
-    contact: [],
+    contact: [
+      {
+        name: '',
+        number: 'Yet to be announced!!'
+      }
+    ],
     prizes: {
       winner: YetToBeAnnounced,
       runner_up: ''
@@ -97,12 +122,39 @@ export const EsportsEventData = [
   {
     id: 6,
     rules: '',
+    imgSrc: Valorant.src,
+    name: 'Valorant',
+    description:
+      'Unleash your tactical prowess, with thrilling gameplay and unique character abilities, strategy and teamwork. Register today and take the first step towards becoming a Valorant legend!',
+    time: '11th May',
+    register_link: '',
+    contact: [
+      {
+        name: '',
+        number: 'Yet to be announced!!'
+      }
+    ],
+    prizes: {
+      winner: YetToBeAnnounced,
+      runner_up: ''
+    },
+    location: YetToBeAnnounced,
+    limitWord: 'default'
+  },
+  {
+    id: 7,
+    rules: '',
     imgSrc: ClashRoyale.src,
     name: 'Clash Royale',
     description: `Get ready to clash with the best player in college. Battle it out in this fast-paced strategy game for a chance to win exciting prizes. Register today and get ready to clash!`,
     time: '11th May',
     register_link: '',
-    contact: [],
+    contact: [
+      {
+        name: '',
+        number: 'Yet to be announced!!'
+      }
+    ],
     prizes: {
       winner: YetToBeAnnounced,
       runner_up: ''

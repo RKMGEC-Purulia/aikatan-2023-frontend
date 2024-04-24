@@ -3,6 +3,7 @@ import React from 'react'
 import RockingTwilight from '@/assets/events/1.webp'
 import TheOctaves from '@/assets/events/7.webp'
 import ChoNach from '@/assets/events/8.webp'
+import Highway from '@/assets/events/highway.webp'
 
 import { CulturalEventCard } from './CulturalEventCard'
 import EventCardWrapper from './EventCardWrapper'
@@ -33,16 +34,16 @@ const CulturalEventData = [
     imgSrc: RockingTwilight.src,
     time: 'May 9th Thursday at 5 PM',
     location: 'College Playground'
+  },
+  {
+    id: 4,
+    description:
+      'Feel the Music Surge with Highway!! Get ready for a mind-blowing band performance at 3rd day of Our Aikatan2K24 that will make your heart race, your feet tap, and your soul soar to the rhythm of the music!',
+    title: 'Highway',
+    imgSrc: Highway.src,
+    time: '11th May Saturday at 10:00PM',
+    location: 'College Playground'
   }
-  // {
-  //   id: 4,
-  //   description:
-  //     'Feel the Music Surge with Snigdhajit & Lifeline!! Get ready for a mind-blowing band performance at 2nd day of Our Aikatan2.0 that will make your heart race, your feet tap, and your soul soar to the rhythm of the music!',
-  //   title: 'Snigdhajit & Lifeline',
-  //   imgSrc: Snigdhajit.src,
-  //   time: '6th May Saturday at 10:00PM',
-  //   location: 'College Playground'
-  // },
   // {
   //   id: 5,
   //   description: `Get ready to be TRAPPED in a web of radical rock! Let TRAP's - The Radical Array Project dynamic sound and vibes take you on a journey like never before.`,
