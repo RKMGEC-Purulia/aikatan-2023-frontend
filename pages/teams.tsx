@@ -1,7 +1,6 @@
-import React from 'react'
 // import { membersDetails } from "@/data/member"
-import { UserProfileCard } from '@/components'
-import MemberCard from '@/components/MemberCard'
+// import { UserProfileCard } from '@/components'
+// import MemberCard from '@/components/MemberCard'
 
 const Teams = () => {
   return (

@@ -1,4 +1,4 @@
-const Head_Members = [
+export const Head_Members = [
   {
     id: 1,
     name: ' Md Zahiruddin',
@@ -81,7 +81,7 @@ const Head_Members = [
   }
 ]
 
-const culturalCommittee = [
+export const culturalCommittee = [
   {
     id: 1,
     name: 'sanju das',
@@ -196,7 +196,7 @@ const culturalCommittee = [
   }
 ]
 
-const TechFestCommittee = [
+export const TechFestCommittee = [
   {
     id: 1,
     name: 'aritra sarkar',
@@ -559,7 +559,7 @@ const TechFestCommittee = [
   }
 ]
 
-const budgetingFundingCommittee = [
+export const budgetingFundingCommittee = [
   {
     id: 1,
     name: 'Prince Haldar',
@@ -674,7 +674,7 @@ const budgetingFundingCommittee = [
   }
 ]
 
-const SocialMediaAndDesigningCommittee = [
+export const SocialMediaAndDesigningCommittee = [
   {
     id: 1,
     name: 'Bishal Dewansh',
