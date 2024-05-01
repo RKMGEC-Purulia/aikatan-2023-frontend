@@ -37,7 +37,14 @@ const navigation: Record<string, Array<NavigationItem>> = {
         }
       ]
     },
-    { label: 'Gallary', to: '/#gallary' },
+    {
+      label: 'Gallary',
+      to: '/#gallary'
+    },
+    {
+      label: 'Teams',
+      to: '/teams'
+    },
     {
       label: 'More',
       to: '',

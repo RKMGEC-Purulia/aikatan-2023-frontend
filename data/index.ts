@@ -7,19 +7,9 @@ export const EventData = [
     date: '05/08/24',
     shedules: [
       {
-        to: '08:00AM',
-        from: '',
-        name: 'School Reporting'
-      },
-      {
         to: '09:00AM',
         from: '',
         name: 'Inauguration Ceremony'
-      },
-      {
-        to: '10:30AM',
-        from: '',
-        name: 'Final round of Quiz'
       },
       {
         to: '02:30PM',
@@ -27,14 +17,9 @@ export const EventData = [
         name: 'School Level Project Exhibition'
       },
       {
-        to: '4:00PM',
+        to: '02:30PM',
         from: '',
-        name: 'Award Ceremony'
-      },
-      {
-        to: '11:00PM',
-        from: '',
-        name: 'AutoCAD Event'
+        name: 'Hackathon'
       }
     ]
   },
@@ -80,6 +65,11 @@ export const EventData = [
         to: '05:00PM',
         from: '',
         name: 'Graphic Design'
+      },
+      {
+        to: '06:00PM',
+        from: '',
+        name: 'In Night - Velvet Souls Band Performance'
       }
     ]
   },
@@ -115,6 +105,16 @@ export const EventData = [
         to: '07:00PM',
         from: '',
         name: 'FIFA'
+      },
+      {
+        to: '06:00PM',
+        from: '',
+        name: 'In Night - Highway Band Performance'
+      },
+      {
+        to: '06:00PM',
+        from: '',
+        name: 'In Night - DJ Quinn Performance'
       }
     ]
   }
