@@ -141,7 +141,7 @@ const PastSponserShipCard = ({
     <div className={'h-max w-60 rounded shadow-xl overflow-hidden'}>
       <div
         className={`bg-center bg-cover w-full h-28 overflow-auto bg-[url(${imgSrc})]`}></div>
-      <SpotLightItem>
+      {/* <SpotLightItem>
         <div className="px-4 py-5 flex flex-col gap-4">
           <div className="flex flex-col gap-2">
             <h3 className={'text-xl  font-semibold uppercase'}>{title}</h3>
@@ -166,7 +166,7 @@ const PastSponserShipCard = ({
             </div>
           </div>
         </div>
-      </SpotLightItem>
+      </SpotLightItem> */}
     </div>
   )
 }

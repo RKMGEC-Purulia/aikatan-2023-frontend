@@ -60,10 +60,10 @@ const EventScheduleCard = ({ date, shedules }: EventCardProps) => {
         {shedules.map(({ name, from, to }, idx) => {
           return (
             <div key={idx} className="flex flex-row gap-3 items-start">
-              <div className={'text-gray-400 text-lg'}>
+              {/* <div className={'text-gray-400 text-lg'}>
                 <p>{to}</p>
                 <p className={'text-center'}>{from}</p>
-              </div>
+              </div> */}
               <p className="text-base 2xl:font-xl font-medium 2xl:font-semibold">
                 {name}
               </p>
