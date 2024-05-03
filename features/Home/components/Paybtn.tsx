@@ -7,7 +7,7 @@ const Paybtn = () => {
       <Link href={'/checkout'}>
         <button
           className={
-            'bg-blue-700 px-4 rounded-sm py-1 text-lg text-white hover:bg-blue-800'
+            'bg-blue-700  w-[150px] py-2 text-2xl  px-4 rounded-lg  text-white hover:bg-blue-800'
           }>
           Book Now
         </button>
