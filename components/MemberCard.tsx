@@ -46,14 +46,14 @@ function MemberCard({
           <motion.a
             whileHover={{ scale: 1.1, color: '#4d81fa' }}
             transition={{ duration: 0.3 }}
-            href={Instagram ? Instagram : ''}
+            href={Instagram}
             target="_blank">
             <BsInstagram />
           </motion.a>
           <motion.a
             whileHover={{ scale: 1.1, color: '#4d81fa' }}
             transition={{ duration: 0.3 }}
-            href={linkedIn ? linkedIn : ''}
+            href={linkedIn}
             target="_blank">
             <BsLinkedin />
           </motion.a>
