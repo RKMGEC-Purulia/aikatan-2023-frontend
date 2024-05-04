@@ -1,7 +1,8 @@
-import MemberCard from '@/components/MemberCard'
-import { headMemberDetails, membersDetails } from '@/data/member'
 import { useState } from 'react'
 import { IoSearch } from 'react-icons/io5'
+
+import MemberCard from '@/components/MemberCard'
+import { headMemberDetails, membersDetails } from '@/data/member'
 
 const Committee = () => {
   const [search, setSearch] = useState('')
