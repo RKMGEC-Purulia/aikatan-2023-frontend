@@ -9,32 +9,33 @@ import { CulturalEventCard } from './CulturalEventCard'
 import EventCardWrapper from './EventCardWrapper'
 
 const CulturalEventData = [
-  {
-    id: 1,
-    description:
-      'Get ready to experience the Vibrant & Rhythmic Chhou Nach, the Heritage of Purulia, with the award-winning team of Bubhan Chandra Kumar!',
-    title: 'Chhau Nach',
-    imgSrc: ChoNach.src,
-    time: 'May 8th Wednesday at 5 PM',
-    location: 'College Playground'
-  },
+  // {
+  //   id: 1,
+  //   description:
+  //     'Get ready to experience the Vibrant & Rhythmic Chhou Nach, the Heritage of Purulia, with the award-winning team of Bubhan Chandra Kumar!',
+  //   title: 'Chhau Nach',
+  //   imgSrc: ChoNach.src,
+  //   time: 'May 8th Wednesday at 5 PM',
+  //   location: 'College Playground'
+  // },
   {
     id: 2,
-    description: `️Harmony in Motion Team Velvet Souls Live in Action!.Grooving to the Bengali Beats. The Velvet Souls is going to Rocking the Stage`,
-    title: 'Velvet Souls',
-    imgSrc: TheOctaves.src,
-    time: '8th May Wednesday at 10PM',
-    location: 'College Playground'
-  },
-  {
-    id: 3,
     description:
       'Join us for a night of non-stop music, dance and entertainment that will leave you wanting more. Featuring a lineup of talented artists and performers.',
     title: 'Rocking Twilight',
     imgSrc: RockingTwilight.src,
-    time: 'May 9th Thursday at 5 PM',
+    time: 'May 10th Thursday at 5 PM',
     location: 'College Playground'
   },
+  {
+    id: 3,
+    description: `️Harmony in Motion Team Velvet Souls Live in Action!.Grooving to the Bengali Beats. The Velvet Souls is going to Rocking the Stage`,
+    title: 'Velvet Souls',
+    imgSrc: TheOctaves.src,
+    time: '10th May Wednesday at 10PM',
+    location: 'College Playground'
+  },
+
   {
     id: 4,
     description:

@@ -4,6 +4,7 @@ import Asphalt from '@/assets/events/asphalt.webp'
 import BGMI from '@/assets/events/bgmi.webp'
 import ClashRoyale from '@/assets/events/ClashRoyale.webp'
 import FIFA from '@/assets/events/Fifa.webp'
+import eFootbal from '@/assets/events/eFootbal.webp'
 import Mini_Militia from '@/assets/events/Mini_Militia.webp'
 import FreeFire from '@/assets/events/freefire.webp'
 import Valorant from '@/assets/events/valorant.webp'
@@ -41,7 +42,7 @@ export const EsportsEventData = [
     rules: '',
     description: `Ready to battle it out on the virtual battlegrounds? Put your skills with thrilling gameplay and nail-biting matches, and win amazing prizes. Don't miss out on this adrenaline-fueled gaming experience!`,
     time: '11th May',
-    register_link: '',
+    register_link: 'https://forms.gle/zHfQQbL9x5PcxkCPA',
     contact: [
       {
         name: '',
@@ -57,7 +58,7 @@ export const EsportsEventData = [
   },
   {
     id: 3,
-    imgSrc: FIFA.src,
+    imgSrc: eFootbal.src,
     name: 'eFootball',
     description: `Join the eFootball e sports competition in college and compete against the best players. With exciting prizes up for grabs. Don't miss out on this incredible opportunity!`,
     time: '11th May',
@@ -105,7 +106,7 @@ export const EsportsEventData = [
     description:
       'Get ready to burn some rubber and dominate the track. This high-octane event is the ultimate test of speed, skill, and strategy. With thrilling prizes. Register now and start your engines!',
     time: '11th May',
-    register_link: '',
+    register_link: 'https://forms.gle/VTW7wrRUWRGCcqCt9',
     contact: [
       {
         name: '',
@@ -121,47 +122,68 @@ export const EsportsEventData = [
   },
   {
     id: 6,
-    rules: '',
-    imgSrc: Valorant.src,
-    name: 'Valorant',
-    description:
-      'Unleash your tactical prowess, with thrilling gameplay and unique character abilities, strategy and teamwork. Register today and take the first step towards becoming a Valorant legend!',
+    imgSrc: FIFA.src,
+    name: 'FIFA',
+    description: `Join the fifa e sports competition in college and compete against the best players. With exciting prizes up for grabs. Don't miss out on this incredible opportunity!`,
     time: '11th May',
-    register_link: '',
+    register_link: 'https://forms.gle/EkkNw2mxSxtyzpHQ7',
     contact: [
       {
         name: '',
-        number: 'Yet to be announced!!'
+        number: '+91 9749961217'
       }
     ],
     prizes: {
       winner: YetToBeAnnounced,
       runner_up: ''
     },
-    location: YetToBeAnnounced,
-    limitWord: 'default'
-  },
-  {
-    id: 7,
     rules: '',
-    imgSrc: ClashRoyale.src,
-    name: 'Clash Royale',
-    description: `Get ready to clash with the best player in college. Battle it out in this fast-paced strategy game for a chance to win exciting prizes. Register today and get ready to clash!`,
-    time: '11th May',
-    register_link: '',
-    contact: [
-      {
-        name: '',
-        number: 'Yet to be announced!!'
-      }
-    ],
-    prizes: {
-      winner: YetToBeAnnounced,
-      runner_up: ''
-    },
     location: YetToBeAnnounced,
     limitWord: 'default'
   }
+  // {
+  //   id: 6,
+  //   rules: '',
+  //   imgSrc: Valorant.src,
+  //   name: 'Valorant',
+  //   description:
+  //     'Unleash your tactical prowess, with thrilling gameplay and unique character abilities, strategy and teamwork. Register today and take the first step towards becoming a Valorant legend!',
+  //   time: '11th May',
+  //   register_link: '',
+  //   contact: [
+  //     {
+  //       name: '',
+  //       number: 'Yet to be announced!!'
+  //     }
+  //   ],
+  //   prizes: {
+  //     winner: YetToBeAnnounced,
+  //     runner_up: ''
+  //   },
+  //   location: YetToBeAnnounced,
+  //   limitWord: 'default'
+  // },
+  // {
+  //   id: 7,
+  //   rules: '',
+  //   imgSrc: ClashRoyale.src,
+  //   name: 'Clash Royale',
+  //   description: `Get ready to clash with the best player in college. Battle it out in this fast-paced strategy game for a chance to win exciting prizes. Register today and get ready to clash!`,
+  //   time: '11th May',
+  //   register_link: '',
+  //   contact: [
+  //     {
+  //       name: '',
+  //       number: 'Yet to be announced!!'
+  //     }
+  //   ],
+  //   prizes: {
+  //     winner: YetToBeAnnounced,
+  //     runner_up: ''
+  //   },
+  //   location: YetToBeAnnounced,
+  //   limitWord: 'default'
+  // }
 ] as const
 
 const Esports = () => {
