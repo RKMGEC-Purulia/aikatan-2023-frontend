@@ -121,7 +121,16 @@ export const membersDetails = [
     Instagram: 'monster.subha01',
     imgId: '1U_WQr6lmvlI3MTe6oCqUP1qmpIao5BHX'
   },
-
+  {
+    id: Math.floor(Date.now() * Math.random()),
+    name: 'Chayan Ghosh',
+    Gmail: 'chayan.8436@gmail.com',
+    role: 'Techlavya',
+    linkedIn: 'https://www.linkedin.com/in/chayan-ghosh-14265120a',
+    Instagram:
+      'https://www.instagram.com/chayan_ghosh_05?igsh=a3EyMnpnODh2OGZ3',
+    imgId: '195CfYiVJMTBL_iSaQ-FsEIdYMhY-DYq9'
+  },
   {
     id: Math.floor(Date.now() * Math.random()),
     name: 'Puskar Ray',
@@ -537,16 +546,6 @@ export const membersDetails = [
     Instagram:
       'https://www.instagram.com/rahul.choudhury?igsh=ZHlueGd5d2Y5Y2ow',
     imgId: '1HY_LXomrniiXIwg8F6Uaxc_uEvxQM_ol'
-  },
-  {
-    id: Math.floor(Date.now() * Math.random()),
-    name: 'Chayan Ghosh',
-    Gmail: 'chayan.8436@gmail.com',
-    role: 'Techlavya',
-    linkedIn: 'https://www.linkedin.com/in/chayan-ghosh-14265120a',
-    Instagram:
-      'https://www.instagram.com/chayan_ghosh_05?igsh=a3EyMnpnODh2OGZ3',
-    imgId: '195CfYiVJMTBL_iSaQ-FsEIdYMhY-DYq9'
   },
   {
     id: Math.floor(Date.now() * Math.random()),
