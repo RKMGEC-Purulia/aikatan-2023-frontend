@@ -256,7 +256,7 @@ export const EventCardV2 = ({
             <div className={'flex flex-row gap-2'}>
               {registrationLink ? (
                 <div>
-                  <a href={registrationLink} target="_blank">
+                  <a href={registrationLink} target="_blank" rel="noreferrer">
                     <button
                       className={
                         ' bg-blue-700 rounded-md py-2 px-3 2xl:px-4 py-0.5 2xl:py-1 2xl:text-lg text-white hover:bg-blue-800'

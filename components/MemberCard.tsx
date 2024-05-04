@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { BsInstagram, BsLinkedin } from 'react-icons/bs'
 
 interface membersDetailsType {
-  key: string
+  key?: number
   name: string
   role?: string
   linkedIn: string
@@ -22,7 +22,7 @@ function MemberCard({
   return (
     <>
       <div
-        className=" w-48 sm:w-56  bg-gray-800 rounded-lg shadow-lg py-4 flex flex-col items-center space-y-3"
+        className="  w-48 sm:w-56  bg-gray-800 rounded-lg shadow-lg py-4 flex flex-col items-center space-y-3"
         key={key}>
         <div>
           <div className=" w-24 h-24 sm:w-32 sm:h-32 rounded-full overflow-hidden ">

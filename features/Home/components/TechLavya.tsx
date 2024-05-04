@@ -53,7 +53,7 @@ export const TechLavyaEvents = [
     description:
       'Gear up folks to put your coding knowledge to the ultimate coding test. A chance for the geeks to show off your knowledge in the best way possible and stand a chance to win prizes.',
     rules_regulation_link: 'https://forms.gle/QvfYipBoHcNKxDQZA',
-    register_link: '',
+    register_link: 'https://forms.gle/KQxtFiCTDwweirjs6',
     contact: [
       {
         name: '',
@@ -71,35 +71,35 @@ export const TechLavyaEvents = [
     location: 'Yet to be announced!!',
     last_date: ''
   },
-  {
-    id: 3,
-    limitWord: 'default',
-    name: 'ACADEXPO - School ',
-    topic: 'project exhibition',
-    time: '8th May',
-    description:
-      'Here comes one of the grandest project exhibition of the town for science and technology like no other. So buckle up and put your projects and stand a chance to win cool prizes.',
-    rules_regulation_link:
-      'https://drive.google.com/file/d/1LydTPN8M4WBapFf054mp63_3-mXmorJO/view?usp=sharing',
-    register_link: '',
-    contact: [
-      {
-        name: '',
-        number: 'Yet to be announced!!'
-      },
-      {
-        name: '',
-        number: ''
-      }
-    ],
-    prizes: {
-      winner: 'Yet to be announced!!',
-      runner_up: ''
-    },
-    last_date: '',
-    imgSrc: Exibition.src,
-    location: 'Yet to be announced!!'
-  },
+  // {
+  //   id: 3,
+  //   limitWord: 'default',
+  //   name: 'ACADEXPO - School ',
+  //   topic: 'project exhibition',
+  //   time: '8th May',
+  //   description:
+  //     'Here comes one of the grandest project exhibition of the town for science and technology like no other. So buckle up and put your projects and stand a chance to win cool prizes.',
+  //   rules_regulation_link:
+  //     'https://drive.google.com/file/d/1LydTPN8M4WBapFf054mp63_3-mXmorJO/view?usp=sharing',
+  //   register_link: '',
+  //   contact: [
+  //     {
+  //       name: '',
+  //       number: 'Yet to be announced!!'
+  //     },
+  //     {
+  //       name: '',
+  //       number: ''
+  //     }
+  //   ],
+  //   prizes: {
+  //     winner: 'Yet to be announced!!',
+  //     runner_up: ''
+  //   },
+  //   last_date: '',
+  //   imgSrc: Exibition.src,
+  //   location: 'Yet to be announced!!'
+  // },
   {
     id: 4,
     limitWord: 'default',
@@ -129,40 +129,40 @@ export const TechLavyaEvents = [
     location: 'Yet to be announced!!',
     last_date: '25th April'
   },
-  {
-    id: 5,
-    limitWord: 'default',
-    name: 'BRAIN-BUSTER school',
-    topic: 'Technical Quiz',
-    imgSrc: Quiz.src,
-    time: '8th May',
-    description:
-      'Gear up folks to put your knowledge to the ultimate test. A chance for the geeks to show off your technical knowledge in the best way possible.',
-    rules_regulation_link:
-      'https://drive.google.com/file/d/1RVvvFJ7O-nvPQ5zgereduEyKiLL6rse1/view?usp=share_link',
-    register_link: '',
-    contact: [
-      {
-        name: '',
-        number: 'Yet to be announced!!'
-      },
-      {
-        name: '',
-        number: ''
-      }
-    ],
-    prizes: {
-      winner: 'Yet to be announced!!',
-      runner_up: ''
-    },
-    location: 'EE Seminar Hall',
-    last_date: ''
-  },
+  // {
+  //   id: 5,
+  //   limitWord: 'default',
+  //   name: 'BRAIN-BUSTER school',
+  //   topic: 'Technical Quiz',
+  //   imgSrc: Quiz.src,
+  //   time: '8th May',
+  //   description:
+  //     'Gear up folks to put your knowledge to the ultimate test. A chance for the geeks to show off your technical knowledge in the best way possible.',
+  //   rules_regulation_link:
+  //     'https://drive.google.com/file/d/1RVvvFJ7O-nvPQ5zgereduEyKiLL6rse1/view?usp=share_link',
+  //   register_link: '',
+  //   contact: [
+  //     {
+  //       name: '',
+  //       number: 'Yet to be announced!!'
+  //     },
+  //     {
+  //       name: '',
+  //       number: ''
+  //     }
+  //   ],
+  //   prizes: {
+  //     winner: 'Yet to be announced!!',
+  //     runner_up: ''
+  //   },
+  //   location: 'EE Seminar Hall',
+  //   last_date: ''
+  // },
 
   {
     id: 6,
     limitWord: 'default',
-    name: 'Graphic Designing',
+    name: 'CAD Builder',
     topic: 'Graphic Designing',
     imgSrc: Design.src,
     time: '10th May',
@@ -170,7 +170,7 @@ export const TechLavyaEvents = [
       'Brings to you a graphics design challenge like never before. A chance for the geeks to show off your design knowledge in the best way possible and stand a chance to win prizes.',
     rules_regulation_link:
       'https://docs.google.com/forms/d/e/1FAIpQLScHI8YRhNJdUuPUfhfw3voRJp9n722Xj_YWwcVf1S-rZTcpbw/viewform',
-    register_link: '',
+    register_link: 'https://forms.gle/mvnzeoLcEcL7qDL57',
     contact: [
       {
         name: '',
