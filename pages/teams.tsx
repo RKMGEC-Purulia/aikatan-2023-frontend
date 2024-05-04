@@ -7,6 +7,7 @@ import { headMemberDetails, membersDetails } from '@/data/member'
 const Committee = () => {
   const [search, setSearch] = useState('')
   const [filterVal, setFilterVal] = useState('all')
+  console.log(search.toLowerCase())
 
   return (
     <section className=" w-full pt-12 ">
@@ -20,7 +21,7 @@ const Committee = () => {
             type="text"
             className=" w-full py-3 pl-10 pr-5 bg-gray-800 outline-none shadow-lg rounded-lg text-sm sm:text-base text-white"
             placeholder="Search Your Name"
-            onChange={(e) => setSearch(e.target.value)}
+            onChange={(e) => setSearch(e.target.value.toLowerCase())}
           />
         </div>
         <div className=" w-full">
