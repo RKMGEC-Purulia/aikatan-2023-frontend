@@ -81,12 +81,12 @@ const Payment: React.FC<paymentType> = ({ upiId, name, money }) => {
                     className="bg1 w-10 h-10"
                     src="https://lottie.host/2b51d7af-7099-49f5-93df-f8190dde11bb/WU9eejAueC.json"></Player>
                 </div>
-                <p className=" py-2 text-sm opacity-75 ">
+                <p className=" py-2 text-base opacity-75 ">
                   If payment done then{' '}
                   <Link
                     href="/"
                     className="text-[#5495ff] cursor-pointer underline">
-                    click
+                    Next
                   </Link>
                 </p>
               </div>
