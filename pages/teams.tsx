@@ -7,7 +7,7 @@ import { headMemberDetails, membersDetails } from '@/data/member'
 const Committee = () => {
   const [search, setSearch] = useState('')
   const [filterVal, setFilterVal] = useState('all')
-  console.log(search.toLowerCase())
+  // console.log(search.toLowerCase())
 
   return (
     <section className=" w-full pt-12 ">

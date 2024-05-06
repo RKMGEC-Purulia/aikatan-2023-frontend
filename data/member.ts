@@ -210,16 +210,16 @@ export const membersDetails = [
     Instagram: 'yes',
     imgId: '1q94PlgqiqT0zk_iIuHWeG_XtGNz-xVFs'
   },
-  {
-    id: Math.floor(Date.now() * Math.random()),
-    name: 'Deblina Panda',
-    Gmail: 'deblinabnk123@gmail.com',
-    role: 'Public Relation',
-    linkedIn:
-      'https://www.linkedin.com/in/deblina-panda-402a92227?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
-    Instagram: '',
-    imgId: '1YA3lYKxd8VLbyieC3vCZmxczuzhzWkrM'
-  },
+  // {
+  //   id: Math.floor(Date.now() * Math.random()),s
+  //   name: 'Deblina Panda',
+  //   Gmail: 'deblinabnk123@gmail.com',
+  //   role: 'Public Relation',
+  //   linkedIn:
+  //     'https://www.linkedin.com/in/deblina-panda-402a92227?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+  //   Instagram: '',
+  //   imgId: '1YA3lYKxd8VLbyieC3vCZmxczuzhzWkrM'
+  // },
   {
     id: Math.floor(Date.now() * Math.random()),
     name: 'Amisha Kumari',
@@ -310,7 +310,7 @@ export const membersDetails = [
     id: Math.floor(Date.now() * Math.random()),
     name: 'SOUVIK MANDAL',
     Gmail: 'souvik1303mandal@gmail.com',
-    role: 'Budgeting and funding.',
+    role: 'Budgeting & Funding',
     linkedIn:
       'https://www.linkedin.com/in/souvik-mandal-abb827172?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
     Instagram: 'https://www.instagram.com/souvik0313?igsh=dWwyN2tiYXhpbTM5',
@@ -1029,6 +1029,16 @@ export const membersDetails = [
     linkedIn: 'https://www.linkedin.com/in/annesha-guha-087678207',
     Instagram: 'https://www.instagram.com/_.encke._?igsh=cGt5MzRpZHJybmhr',
     imgId: '1ruxvD5O5ZfGLBH3W4yiQwAFum9Opym0T'
+  },
+  {
+    id: Math.floor(Date.now() * Math.random()),
+    name: 'Shreya Chandra',
+    Gmail: 'shreyaratna15@gmail.com',
+    role: 'Cultural',
+    linkedIn:
+      'https://www.linkedin.com/in/shreya-chandra-1b891126b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    Instagram: 'http://www.instagram.com/_shreyafr',
+    imgId: '1RrHRF6UiZ7Hqx5F1tr8nglpyseOSxmKj'
   },
   {
     id: Math.floor(Date.now() * Math.random()),

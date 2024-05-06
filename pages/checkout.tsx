@@ -1,6 +1,5 @@
 import { message } from 'antd'
-import React, { useState } from 'react'
-import { useForm } from 'react-hook-form'
+import React, { useEffect, useState } from 'react'
 
 import { Player } from '@lottiefiles/react-lottie-player'
 
@@ -18,35 +17,63 @@ const Checkout = () => {
   //                 `);
   //             </script>
 
-  const {
-    handleSubmit,
-    register,
-    formState: { errors }
-  } = useForm()
+  const [inputData, setInputData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    day: 'day_1&2',
+    amount: ''
+  })
+
+  useEffect(() => {
+    setInputData((prev) => ({
+      ...prev,
+      amount: inputData.day === 'day_1&2' ? '450' : '250'
+    }))
+  }, [inputData.day])
+
   const [paymentDetails, setPaymentDetails] = useState({
-    upiId: '9875332886800@paytm',
+    upiId: 'soumenmandal0008-1@okaxis',
     name: '',
     amount: ''
   })
 
-  const submit = (data: any) => {
-    console.log(data)
-    if (isNaN(Number(data.amount)) || Number(data.amount) <= 0) {
-      data.amount = '0'
+  const handleSubmit = (e: any) => {
+    e.preventDefault()
+    if (isNaN(Number(inputData.amount)) || Number(inputData.amount) <= 0) {
+      inputData.amount = '0'
       message.warning('please enter a valid amount')
       return
     }
 
+    if (
+      inputData.name === '' ||
+      inputData.email === '' ||
+      inputData.phone === '' ||
+      inputData.day === '' ||
+      inputData.amount === ''
+    ) {
+      message.warning('Please fill up all details')
+      return
+    }
+
     const formData = new FormData()
-    formData.append('Name', data.name)
-    formData.append('Email', data.email)
-    formData.append('Phone_no', data.phone)
-    formData.append('Passout_year', data.year)
-    formData.append('Department', data.department)
-    formData.append('Amount', data.amount)
+    formData.append('Name', inputData.name)
+    formData.append('Email', inputData.email)
+    formData.append('Phone_no', inputData.phone)
+    formData.append('Day', inputData.day)
+    formData.append('Amount', inputData.amount)
+
+    setInputData({
+      name: '',
+      email: '',
+      phone: '',
+      day: 'day_1&2',
+      amount: ''
+    })
 
     fetch(
-      'https://script.google.com/macros/s/AKfycbyvx3ymvIznztOOMjT7lXpTmIbjB1ZWO1inTv21ftqIyxKBUppefFtnHhLv9DWK0nda/exec',
+      'https://script.google.com/macros/s/AKfycbwje7mXqo1TttsGxlbwYnjKsMeicYVIjryMoOQDQqW8KH25sIvzM_39Al00okd2h9gx/exec',
       {
         method: 'POST',
         body: formData
@@ -62,8 +89,8 @@ const Checkout = () => {
         console.log(text) // Log response text
         setPaymentDetails((prev) => ({
           ...prev,
-          name: data.name,
-          amount: data.amount
+          name: inputData.name,
+          amount: inputData.amount
         }))
       })
       .catch((error) => {
@@ -89,8 +116,8 @@ const Checkout = () => {
     <>
       <div className=" w-full h-screen pt-[80px]">
         <form
-          onSubmit={handleSubmit(submit)}
-          className="max-w-sm mx-auto bg-gray-800 shadow-xl rounded-lg p-6 space-y-4">
+          onSubmit={handleSubmit}
+          className="max-w-md mx-auto bg-gray-800 shadow-xl rounded-lg p-6 space-y-4">
           <div className="w-full">
             <label
               htmlFor="name"
@@ -101,16 +128,13 @@ const Checkout = () => {
               type="text"
               placeholder="Enter your name"
               className="w-full px-3 py-2 bg-[#414141] rounded-md border border-slate-600 outline-none  duration-200"
-              {...register('name', {
-                required: 'Name is required'
-              })}
+              onChange={(e) =>
+                setInputData((prev) => ({
+                  ...prev,
+                  name: e.target.value
+                }))
+              }
             />
-            {errors.name && (
-              <span className=" text-red-500 text-xs">
-                {/* @ts-ignore */}
-                {errors.name.message}
-              </span>
-            )}
           </div>
           <div className="w-full">
             <label
@@ -122,17 +146,13 @@ const Checkout = () => {
               type="text"
               placeholder="Enter your email address"
               className="w-full px-3 py-2 bg-[#414141] rounded-md border border-slate-600 outline-none  duration-200"
-              {...register('email', {
-                required: 'Email is required'
-                // pattern: /^\S+@\S+$/i
-              })}
+              onChange={(e) =>
+                setInputData((prev) => ({
+                  ...prev,
+                  email: e.target.value
+                }))
+              }
             />
-            {errors.email && (
-              <span className=" text-red-500 text-xs">
-                {/* @ts-ignore */}
-                {errors.email.message}
-              </span>
-            )}
           </div>
           <div className="w-full">
             <label
@@ -144,50 +164,31 @@ const Checkout = () => {
               type="number"
               placeholder="Enter your phone number"
               className="w-full px-3 py-2 bg-[#414141] rounded-md border border-slate-600 outline-none  duration-200"
-              {...register('phone', {
-                required: 'Phone number is required'
-                // minLength: 6,
-                // maxLength: 12
-              })}
+              onChange={(e) =>
+                setInputData((prev) => ({
+                  ...prev,
+                  phone: e.target.value
+                }))
+              }
             />
-            {errors.name && (
-              <span className=" text-red-500 text-xs">
-                {/* @ts-ignore */}
-                {errors.name.message}
-              </span>
-            )}
           </div>
           <div>
             <label
-              htmlFor="department"
+              htmlFor="day"
               className=" inline-block mb-1 pl-1 font-medium">
-              Department :
+              Select Your Days :
             </label>
             <select
               className=" w-full px-3 py-2 bg-[#414141] rounded-md border border-slate-600 outline-none  duration-200"
-              {...register('department', { required: true })}>
-              <option value="">- - - select your department - - -</option>
-              <option value="CSE">CSE</option>
-              <option value="ECE">ECE</option>
-              <option value="EE">EE</option>
-              <option value="ME">ME</option>
-              <option value="CE">CE</option>
-            </select>
-          </div>
-          <div>
-            <label
-              htmlFor="year"
-              className=" inline-block mb-1 pl-1 font-medium">
-              Passout Year :
-            </label>
-            <select
-              className=" w-full px-3 py-2 bg-[#414141] rounded-md border border-slate-600 outline-none  duration-200"
-              {...register('year', { required: true })}>
-              <option value="">- - - select passout year - - -</option>
-              <option value="2019-23">2019-23</option>
-              <option value="2018-22">2018-22</option>
-              <option value="2017-21">2017-21</option>
-              <option value="2016-20">2016-20</option>
+              onChange={(e) =>
+                setInputData((prev) => ({
+                  ...prev,
+                  day: e.target.value
+                }))
+              }>
+              <option value="day_1&2">Day - 1 & Day - 2</option>
+              <option value="day_1">Day - 1</option>
+              <option value="day_2">Day - 2</option>
             </select>
           </div>
           <div className="w-full">
@@ -199,17 +200,10 @@ const Checkout = () => {
             <input
               type="text"
               placeholder="Enter any amount"
-              className="w-full px-3 py-2 bg-[#414141] rounded-md border border-slate-600 outline-none  duration-200"
-              {...register('amount', {
-                required: 'please enter amount'
-              })}
+              value={inputData.day === 'day_1&2' ? '450' : '250'}
+              className="w-full px-3 py-2 bg-[#414141] rounded-md border border-slate-600 outline-none  duration-200 text-green-500"
+              readOnly
             />
-            {errors.name && (
-              <span className=" text-red-500 text-xs">
-                {/* @ts-ignore */}
-                {errors.name.message}
-              </span>
-            )}
           </div>
           <div className="w-full flex justify-center item-center ">
             <button type="submit" className=" px-4 py-2 rounded-lg bg-blue-600">
