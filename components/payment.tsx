@@ -84,7 +84,7 @@ const Payment: React.FC<paymentType> = ({ upiId, name, money }) => {
                 <p className=" py-2 text-base opacity-75 ">
                   If payment done then{' '}
                   <Link
-                    href="/"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSdDvdwMCZIVAZkBGXn9PEUZruLPZJICHI_YYhPd2ru-wP2KJQ/viewform?usp=sf_link"
                     className="text-[#5495ff] cursor-pointer underline">
                     Next
                   </Link>
