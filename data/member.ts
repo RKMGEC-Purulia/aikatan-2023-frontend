@@ -1011,15 +1011,17 @@ export const membersDetails = [
       'https://www.instagram.com/_victor.dhruba_11?igsh=NWducGE4aWdlODlk',
     imgId: '1_g6CCil3ZqD3fBCg4ztFmfhHN2ZG5Z8O'
   },
-  // {
-  //   "Timestamp": "5/2/2024 23:07:31",
-  //   "name": "Sk Nasiruddin",
-  //   "Gmail": "sknasiruddincse@gmail.com",
-  //   "role": "Social Media & Designing",
-  //   "linkedIn": "",
-  //   "Instagram": "",
-  //   "imgId": "1g-z5u7G8HlPZycEOp3rmpmGgLGu-LCNv"
-  // },
+  {
+    Timestamp: Math.floor(Date.now() * Math.random()),
+    name: 'Sayandip Dutta',
+    Gmail: '',
+    role: 'Social Media & Designing',
+    linkedIn:
+      'https://www.linkedin.com/in/sayandip-dutta-edit?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    Instagram:
+      'https://www.instagram.com/sayandipduttayt?igsh=MWhkY3B2djYwYmF3bA==',
+    imgId: '19hs4OaJEomG_NdCAo3vNL-5pgIsZS64B'
+  },
 
   {
     id: Math.floor(Date.now() * Math.random()),
