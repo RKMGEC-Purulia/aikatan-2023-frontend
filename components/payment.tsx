@@ -41,7 +41,7 @@ const Payment: React.FC<paymentType> = ({ upiId, name, money }) => {
 
   return (
     <>
-      <div className=" w-full h-screen pt-[80px]">
+      <div className=" w-full min-h-screen pt-[75px]">
         <div className="max-w-sm mx-auto bg-gray-800 shadow-xl rounded-lg p-6">
           <div className="qr-container items-center justify-center place-content-center ">
             <div className="border border-zinc-950 w-[300px] h-auto  mx-auto ">
@@ -82,12 +82,19 @@ const Payment: React.FC<paymentType> = ({ upiId, name, money }) => {
                     src="https://lottie.host/2b51d7af-7099-49f5-93df-f8190dde11bb/WU9eejAueC.json"></Player>
                 </div>
                 <p className=" py-2 text-base opacity-75 ">
-                  If payment done then{' '}
-                  <Link
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSdDvdwMCZIVAZkBGXn9PEUZruLPZJICHI_YYhPd2ru-wP2KJQ/viewform?usp=sf_link"
-                    className="text-[#5495ff] cursor-pointer underline">
-                    Next
-                  </Link>
+                  If payment done then click{' '}
+                </p>
+                <Link
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdDvdwMCZIVAZkBGXn9PEUZruLPZJICHI_YYhPd2ru-wP2KJQ/viewform?usp=sf_link"
+                  className=" px-4 py-2 rounded-lg tracking-wider text-base bg-green-600">
+                  Next
+                </Link>
+                <p className=" text-slate-400 mt-4">
+                  If any issue occur please contact to this <br />
+                  <span className=" underline font-semibold tracking-wider cursor-pointer">
+                    +91 8944808544
+                  </span>{' '}
+                  number
                 </p>
               </div>
             </div>

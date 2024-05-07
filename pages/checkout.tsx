@@ -206,8 +206,10 @@ const Checkout = () => {
             />
           </div>
           <div className="w-full flex justify-center item-center ">
-            <button type="submit" className=" px-4 py-2 rounded-lg bg-blue-600">
-              Submit
+            <button
+              type="submit"
+              className=" px-4 py-2 rounded-lg tracking-wider text-base bg-blue-600">
+              Next
             </button>
           </div>
           <div className="text-center justify-center items-center">
